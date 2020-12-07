@@ -1,0 +1,24 @@
+// fonts will inclue here
+
+// utitlity
+@import './utility/variable';
+@import './function/function';
+@import './utility/reset';
+
+// component
+@import './component/button';
+@import './component/servicesitem';
+@import './component/testimonial';
+@import './component/blog';
+@import './component/inputs';
+
+// reuse
+@import './reuse/reuse';
+
+// pages
+@import './page/home';
+// section
+@import './section/header';
+@import './section/about';
+@import './section/testimonial';
+@import './section/footer';

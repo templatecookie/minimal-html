@@ -1,0 +1,36 @@
+// Responsive function
+@mixin ex_small {
+	@media (min-width: 320px) and(max-width: 575px) {
+		@content;
+	}
+}
+
+@mixin small {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+@mixin medium {
+	@media (min-width: 768px) and (max-width: 1023px) {
+		@content;
+	}
+}
+@mixin large {
+	@media (min-width: 1024px) and (max-width: 1200px) {
+		@content;
+	}
+}
+
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
+}

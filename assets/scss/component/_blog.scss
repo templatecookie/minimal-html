@@ -1,0 +1,50 @@
+.blog-item{
+    &__image{
+        position: relative;
+        img{
+            height: 624px;
+            width:100%;
+            object-fit: cover;
+        }
+    }
+    &__info{
+        position: absolute;
+        bottom: 70px;
+        left: 0px;
+        right: 0px;
+        margin: 0px 50px;
+        background-color: #ffffff;
+        padding: 30px;
+        h5{
+            max-width: 370px;
+            line-height: 30px;
+            color: #1F2020;
+        }
+        span{
+            font-size: 13px;
+            font-weight: 400;
+            color: #404040;
+        }
+    }
+    &__bottom{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       .blog_date{
+           span{
+                margin-left: 6px;
+           }
+       }
+       .blog_likes{
+            span{
+                margin-left: 6px;
+            }
+       } 
+       .blog_comments{
+            span{
+                margin-left: 6px;
+            }
+       } 
+    }
+}

@@ -1,0 +1,117 @@
+// Header Starts Here
+header{
+    background-color: #FFFFFF;
+    padding: 20px 0px;
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo{
+            a{
+                color: #1F2020;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        &__main{
+            display: flex;
+            li{
+                a{
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #404040; 
+                    line-height: 24px;
+                    margin-left: 36px;
+                    transition: 0.3s;
+                    &:hover{
+                        color: #1F2020;
+                    }
+                }
+                .active-menu{
+                    margin-left: 0;
+                    color: #1F2020;
+                    font-weight: 600;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        bottom: -3px;
+                        left: 0;
+                        right: 0;
+                        height: 3px;
+                        width: 9px;
+                        background-color: #1F2020;
+                        border-radius: 5px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+// Header Ends Here
+
+// Banner Section Starts Here
+.banner-area{
+    padding-top: 60px;
+    height: 907px;
+    background-color: #1F2020;
+    position: relative;
+    .dots-image{
+        position: absolute;
+        top: 85px;
+        right: -10px;
+    }
+    &__heading{
+        margin-bottom: 27px;
+        h1{
+            font-size: 58px;
+            line-height: 66px;
+            span{
+                color: #FFE817;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__text{
+        margin-bottom: 32px;
+        p{
+            line-height: 26px;
+            max-width: 500px;
+        }
+    }
+   
+}
+// Banner Section Ends Here
+
+// About Section Starts Here
+.about-me{
+    position: relative;
+    &__dots{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &__image{
+
+    }
+    &__links{
+       -ms-transform: rotate(90deg); /* IE 9 */
+       transform: rotate(90deg);
+       position: relative;
+       &::before{
+           position: absolute;
+           content: '';
+           top: 12px;
+           left: -153px;
+           height: 1px;
+           width: 140px;
+           background-color: #ffffff;
+       }
+    }
+    &__info{
+
+    }
+}
+// About Section Ends Here

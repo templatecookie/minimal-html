@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components</title>
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="container pb-4">
+        <!-- Reuse This Class  -->
+        <span class="bg-warning text-white p-2 my-4 d-inline-block">Button</span>
+        <!-- All Buttons Starts Here -->
+        <div class="d-flex justify-content-between flex-wrap">
+            <button class="btn">Main Button</button>
+            <button class="btn btn_white">White Button</button>
+            <button class="btn btn_yellow">Yallow Button</button>
+            <button class="btn btn_prev">Prev <i class="icofont-long-arrow-left"></i></button>
+            <button class="btn btn_next">Next <i class="icofont-long-arrow-right"></i></button>
+        </div>
+        <div class="d-flex justify-content-around flex-wrap mt-4">
+            <code class="mx-5">.btn</code>
+            <code class="mx-5">.btn.btn_white</code>
+            <code class="mx-5">.btn.btn_yellow</code>
+            <code class="mx-5">.btn.btn_prev</code>
+            <code class="mx-5">.btn.btn_next</code>
+        </div>
+        <!-- All Buttons Ends Here -->
+
+        <span class="bg-warning text-white p-2 mt-5 mb-2 d-inline-block">Services Item</span>
+        <div class="row">
+            <div class="col-lg-4">
+                <!-- Services Item Starts Here -->
+                    <div class="services-item text-center">
+                        <div class="services-item__icon">
+                            <img src="assets/images/Icon/01.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="services-item__heading">
+                            <h4 class="mb-0">Web Design</h4>
+                        </div>
+                        <div class="services-item__text">
+                            <p class="mb-0">
+                                Logo & Brand Identity, Art & Illustration, Visual Design, Product & Characters Design, Print Design etc.
+                            </p>
+                        </div>
+                    </div>
+                <!-- Services Item Ends Here -->
+            </div>
+            <div class="col-lg-4">
+                <!-- Services Item Starts Here -->
+                    <div class="services-item text-center active-item">
+                        <div class="services-item__icon">
+                            <img src="assets/images/Icon/02.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="services-item__heading">
+                            <h4 class="mb-0">UI & UX Design</h4>
+                        </div>
+                        <div class="services-item__text">
+                            <p class="mb-0">
+                                User Research, User Personas, Wireframing and Prototyping, Interaction Design & Usability Testing.
+                            </p>
+                        </div>
+                    </div>
+                <!-- Services Item Ends Here -->
+            </div>
+            <div class="col-lg-4">
+                <!-- Services Item Starts Here -->
+                    <div class="services-item text-center">
+                        <div class="services-item__icon">
+                            <img src="assets/images/Icon/03.png" alt="icon" class="img-fluid">
+                        </div>
+                        <div class="services-item__heading">
+                            <h4 class="mb-0">Content Creator</h4>
+                        </div>
+                        <div class="services-item__text">
+                            <p class="mb-0">
+                                Logo & Brand Identity, Art & Illustration, Visual Design, Product & Characters Design, Print Design etc.
+                            </p>
+                        </div>
+                    </div>
+                <!-- Services Item Ends Here -->
+            </div>
+        </div>
+
+        <span class="bg-warning text-white p-2 mt-5 mb-2 d-inline-block">Testimonials</span>
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="testimonial-left">
+                    <div class="testimonial-left__heading">
+                        <h5>Patrick Hill</h5>
+                        <span>-CEO of webflow university</span>
+                    </div>
+                    <div class="testimonial-left__text">
+                        <p>
+                            In consequat, quam id sodales hendrerit, eros mi molestie leo, nec lacinia risus neque tristique augue. Proin tempus urna vel congue elementum. Vestibulum euismod accumsan dui, ac iaculis sem viverra eu. Donec convallis, elit vitae ornare cursus, libero purus facilisis felis.
+                        </p>
+                    </div>
+                    <div class="testimonial-left__dots">
+                        <span></span>
+                        <span></span>
+                        <span class="active_dots"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="testimonial-left__buttons">
+                        <button class="btn btn_prev">Prev <i class="icofont-long-arrow-left"></i></button>
+                        <button class="btn btn_next">Next <i class="icofont-long-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+                <img src="assets/images/Testimonial/clients.png" alt="clients" class="img-fluid">
+            </div>
+        </div>
+        <span class="bg-info text-white p-2 mt-5 mb-2 d-inline-block">Blog</span>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="blog-item">
+                    <div class="blog-item__image">
+                        <img src="assets/images/Blog/01.png" alt="Blog-Image" class="img-fluid">
+                    </div>
+                    <div class="blog-item__info">
+                        <h5>Getting Started With Adobe Xd.</h5>
+                        <span>Category Design</span>
+                        <div class="blog-item__bottom">
+                            <div class="blog_date">
+                                <svg id="Dates_Icon" data-name="Dates Icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                    <defs>
+                                      <style>
+                                        .cls-1 {
+                                          fill: #1f2020;
+                                        }
+                                      </style>
+                                    </defs>
+                                    <path id="Path_1" data-name="Path 1" class="cls-1" d="M12.4,55.5H1.6A1.606,1.606,0,0,1,0,53.9V44.272a1.605,1.605,0,0,1,1.6-1.6H12.4a1.605,1.605,0,0,1,1.6,1.6V53.9A1.606,1.606,0,0,1,12.4,55.5ZM1.6,43.543a.73.73,0,0,0-.729.729V53.9a.73.73,0,0,0,.729.729H12.4a.73.73,0,0,0,.729-.729V44.272a.73.73,0,0,0-.729-.729Zm0,0" transform="translate(0 -41.501)"/>
+                                    <path id="Path_2" data-name="Path 2" class="cls-1" d="M13.563,171.543H.438a.438.438,0,0,1,0-.875H13.563a.438.438,0,0,1,0,.875Zm0,0" transform="translate(0 -166.001)"/>
+                                    <path id="Path_3" data-name="Path 3" class="cls-1" d="M107.105,3.5a.438.438,0,0,1-.437-.437V.438a.438.438,0,0,1,.875,0V3.063A.438.438,0,0,1,107.105,3.5Zm0,0" transform="translate(-103.751)"/>
+                                    <path id="Path_4" data-name="Path 4" class="cls-1" d="M373.77,3.5a.438.438,0,0,1-.437-.437V.438a.438.438,0,0,1,.875,0V3.063A.438.438,0,0,1,373.77,3.5Zm0,0" transform="translate(-363.124)"/>
+                                  </svg>
+                                  <span>4th November</span>
+                            </div>
+                            <div class="blog_likes">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                    <g id="Heart_Icon" data-name="Heart Icon" transform="translate(0 0)" fill="rgba(31,32,32,0)">
+                                      <path d="M 7.500002861022949 13.38972568511963 C 4.1161208152771 10.99860763549805 1.853721618652344 8.567153930664063 0.9479528665542603 6.344608783721924 C 0.1251128613948822 4.324898719787598 0.5811928510665894 2.965778589248657 1.10869288444519 2.181278705596924 C 1.806002855300903 1.14422869682312 3.053552865982056 0.5000086426734924 4.364492893218994 0.5000086426734924 C 5.471703052520752 0.5000086426734924 6.446753025054932 0.9552486538887024 7.110023021697998 1.781878709793091 L 7.500002861022949 2.267908573150635 L 7.8899827003479 1.781878709793091 C 8.553253173828125 0.9552486538887024 9.528303146362305 0.5000086426734924 10.63551330566406 0.5000086426734924 C 11.94659328460693 0.5000086426734924 13.1942024230957 1.144188642501831 13.89146327972412 2.181168556213379 C 14.41893291473389 2.96561861038208 14.87496280670166 4.324728488922119 14.05203247070313 6.344658851623535 C 13.14627361297607 8.567155838012695 10.88387584686279 10.99861621856689 7.500002861022949 13.38972568511963 Z" stroke="none"/>
+                                      <path d="M 7.500003337860107 12.77555751800537 C 11.45051193237305 9.928511619567871 12.99325370788574 7.617793560028076 13.58899307250977 6.156018733978271 C 14.17462253570557 4.718528747558594 14.13574314117432 3.440528631210327 13.47654247283936 2.460158586502075 C 12.87094306945801 1.559508681297302 11.78232288360596 1.000008702278137 10.63551330566406 1.000008702278137 C 9.682982444763184 1.000008702278137 8.846432685852051 1.388808608055115 8.279962539672852 2.094798564910889 L 7.500002861022949 3.066858768463135 L 6.720042705535889 2.094798564910889 C 6.153573036193848 1.388808608055115 5.317022800445557 1.000008702278137 4.364492893218994 1.000008702278137 C 3.217822790145874 1.000008702278137 2.129262924194336 1.559548616409302 1.523612856864929 2.460278749465942 C 0.8643728494644165 3.440698623657227 0.8254428505897522 4.718668460845947 1.410972833633423 6.155908584594727 C 2.00674033164978 7.617778778076172 3.549477815628052 9.928494453430176 7.500003337860107 12.77555751800537 M 7.500002861022949 13.99999904632568 C 3.467302799224854 11.20465850830078 1.3523029088974 8.661648750305176 0.484922856092453 6.533308506011963 C -1.14367413520813 2.535789251327515 1.629615902900696 7.098083642631536e-06 4.364495754241943 7.098083642631536e-06 C 5.531755447387695 7.098083642631536e-06 6.691858291625977 0.4617838561534882 7.500002861022949 1.468968629837036 C 8.307982444763184 0.4619893431663513 9.468491554260254 7.098083642631536e-06 10.63551044464111 7.098083642631536e-06 C 13.37062168121338 7.098083642631536e-06 16.14382171630859 2.535441160202026 14.51508331298828 6.533308506011963 C 13.64769268035889 8.661648750305176 11.53270244598389 11.20465850830078 7.500002861022949 13.99999904632568 Z" stroke="none" fill="#1f2020"/>
+                                    </g>
+                                  </svg>
+                                  <span>195 Likes</span>
+                            </div>
+                            <div class="blog_comments">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                    <defs>
+                                      <style>
+                                        .cls-1 {
+                                          fill: #1f2020;
+                                        }
+                                      </style>
+                                    </defs>
+                                    <path id="Comment_Icon" data-name="Comment Icon" class="cls-1" d="M12.492,0H1.509A1.51,1.51,0,0,0,0,1.509V9.554a1.51,1.51,0,0,0,1.509,1.508H4.989l1.153,2.306A1,1,0,0,0,7,14a1,1,0,0,0,.858-.632l1.153-2.306h3.481A1.51,1.51,0,0,0,14,9.554V1.509A1.51,1.51,0,0,0,12.492,0Zm.688,9.554a.689.689,0,0,1-.688.688H8.757a.41.41,0,0,0-.367.227L7.124,13A.5.5,0,0,1,7,13.173.5.5,0,0,1,6.876,13L5.61,10.469a.41.41,0,0,0-.367-.227H1.509A.689.689,0,0,1,.82,9.554V1.509A.689.689,0,0,1,1.509.82H12.492a.689.689,0,0,1,.688.688Zm0,0"/>
+                                  </svg> 
+                                  <span>72 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="blog-item">
+                    <div class="blog-item__image">
+                        <img src="assets/images/Blog/02.png" alt="Blog-Image" class="img-fluid">
+                    </div>
+                    <div class="blog-item__info">
+                        <h5>Getting Started With Adobe Xd.</h5>
+                        <span>Category Design</span>
+                        <div class="blog-item__bottom">
+                            <div class="blog_date">
+                                <svg id="Dates_Icon" data-name="Dates Icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                    <defs>
+                                      <style>
+                                        .cls-1 {
+                                          fill: #1f2020;
+                                        }
+                                      </style>
+                                    </defs>
+                                    <path id="Path_1" data-name="Path 1" class="cls-1" d="M12.4,55.5H1.6A1.606,1.606,0,0,1,0,53.9V44.272a1.605,1.605,0,0,1,1.6-1.6H12.4a1.605,1.605,0,0,1,1.6,1.6V53.9A1.606,1.606,0,0,1,12.4,55.5ZM1.6,43.543a.73.73,0,0,0-.729.729V53.9a.73.73,0,0,0,.729.729H12.4a.73.73,0,0,0,.729-.729V44.272a.73.73,0,0,0-.729-.729Zm0,0" transform="translate(0 -41.501)"/>
+                                    <path id="Path_2" data-name="Path 2" class="cls-1" d="M13.563,171.543H.438a.438.438,0,0,1,0-.875H13.563a.438.438,0,0,1,0,.875Zm0,0" transform="translate(0 -166.001)"/>
+                                    <path id="Path_3" data-name="Path 3" class="cls-1" d="M107.105,3.5a.438.438,0,0,1-.437-.437V.438a.438.438,0,0,1,.875,0V3.063A.438.438,0,0,1,107.105,3.5Zm0,0" transform="translate(-103.751)"/>
+                                    <path id="Path_4" data-name="Path 4" class="cls-1" d="M373.77,3.5a.438.438,0,0,1-.437-.437V.438a.438.438,0,0,1,.875,0V3.063A.438.438,0,0,1,373.77,3.5Zm0,0" transform="translate(-363.124)"/>
+                                  </svg>
+                                  <span>4th November</span>
+                            </div>
+                            <div class="blog_likes">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                                    <g id="Heart_Icon" data-name="Heart Icon" transform="translate(0 0)" fill="rgba(31,32,32,0)">
+                                      <path d="M 7.500002861022949 13.38972568511963 C 4.1161208152771 10.99860763549805 1.853721618652344 8.567153930664063 0.9479528665542603 6.344608783721924 C 0.1251128613948822 4.324898719787598 0.5811928510665894 2.965778589248657 1.10869288444519 2.181278705596924 C 1.806002855300903 1.14422869682312 3.053552865982056 0.5000086426734924 4.364492893218994 0.5000086426734924 C 5.471703052520752 0.5000086426734924 6.446753025054932 0.9552486538887024 7.110023021697998 1.781878709793091 L 7.500002861022949 2.267908573150635 L 7.8899827003479 1.781878709793091 C 8.553253173828125 0.9552486538887024 9.528303146362305 0.5000086426734924 10.63551330566406 0.5000086426734924 C 11.94659328460693 0.5000086426734924 13.1942024230957 1.144188642501831 13.89146327972412 2.181168556213379 C 14.41893291473389 2.96561861038208 14.87496280670166 4.324728488922119 14.05203247070313 6.344658851623535 C 13.14627361297607 8.567155838012695 10.88387584686279 10.99861621856689 7.500002861022949 13.38972568511963 Z" stroke="none"/>
+                                      <path d="M 7.500003337860107 12.77555751800537 C 11.45051193237305 9.928511619567871 12.99325370788574 7.617793560028076 13.58899307250977 6.156018733978271 C 14.17462253570557 4.718528747558594 14.13574314117432 3.440528631210327 13.47654247283936 2.460158586502075 C 12.87094306945801 1.559508681297302 11.78232288360596 1.000008702278137 10.63551330566406 1.000008702278137 C 9.682982444763184 1.000008702278137 8.846432685852051 1.388808608055115 8.279962539672852 2.094798564910889 L 7.500002861022949 3.066858768463135 L 6.720042705535889 2.094798564910889 C 6.153573036193848 1.388808608055115 5.317022800445557 1.000008702278137 4.364492893218994 1.000008702278137 C 3.217822790145874 1.000008702278137 2.129262924194336 1.559548616409302 1.523612856864929 2.460278749465942 C 0.8643728494644165 3.440698623657227 0.8254428505897522 4.718668460845947 1.410972833633423 6.155908584594727 C 2.00674033164978 7.617778778076172 3.549477815628052 9.928494453430176 7.500003337860107 12.77555751800537 M 7.500002861022949 13.99999904632568 C 3.467302799224854 11.20465850830078 1.3523029088974 8.661648750305176 0.484922856092453 6.533308506011963 C -1.14367413520813 2.535789251327515 1.629615902900696 7.098083642631536e-06 4.364495754241943 7.098083642631536e-06 C 5.531755447387695 7.098083642631536e-06 6.691858291625977 0.4617838561534882 7.500002861022949 1.468968629837036 C 8.307982444763184 0.4619893431663513 9.468491554260254 7.098083642631536e-06 10.63551044464111 7.098083642631536e-06 C 13.37062168121338 7.098083642631536e-06 16.14382171630859 2.535441160202026 14.51508331298828 6.533308506011963 C 13.64769268035889 8.661648750305176 11.53270244598389 11.20465850830078 7.500002861022949 13.99999904632568 Z" stroke="none" fill="#1f2020"/>
+                                    </g>
+                                  </svg>
+                                  <span>195 Likes</span>
+                            </div>
+                            <div class="blog_comments">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                    <defs>
+                                      <style>
+                                        .cls-1 {
+                                          fill: #1f2020;
+                                        }
+                                      </style>
+                                    </defs>
+                                    <path id="Comment_Icon" data-name="Comment Icon" class="cls-1" d="M12.492,0H1.509A1.51,1.51,0,0,0,0,1.509V9.554a1.51,1.51,0,0,0,1.509,1.508H4.989l1.153,2.306A1,1,0,0,0,7,14a1,1,0,0,0,.858-.632l1.153-2.306h3.481A1.51,1.51,0,0,0,14,9.554V1.509A1.51,1.51,0,0,0,12.492,0Zm.688,9.554a.689.689,0,0,1-.688.688H8.757a.41.41,0,0,0-.367.227L7.124,13A.5.5,0,0,1,7,13.173.5.5,0,0,1,6.876,13L5.61,10.469a.41.41,0,0,0-.367-.227H1.509A.689.689,0,0,1,.82,9.554V1.509A.689.689,0,0,1,1.509.82H12.492a.689.689,0,0,1,.688.688Zm0,0"/>
+                                  </svg> 
+                                  <span>72 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <span class="bg-info text-white p-2 mt-5 mb-2 d-inline-block">Form-Input</span>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contact-form">
+                    <form action="#">
+                        <input type="text" name="" id="name" placeholder="Your name" class="form-control">
+                        <input type="email" placeholder="Your email" id="email" class="form-control" required>
+                        <input type="text" placeholder="Subject" id="subject" class="form-control">
+                        <textarea name="" id="text-area" cols="" rows="" placeholder="Your message" class="form-control"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+   </div>
+
+
+
+    <!-- All js Goes here -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

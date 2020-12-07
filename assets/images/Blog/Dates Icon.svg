@@ -1,0 +1,13 @@
+<svg id="Dates_Icon" data-name="Dates Icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1f2020;
+      }
+    </style>
+  </defs>
+  <path id="Path_1" data-name="Path 1" class="cls-1" d="M12.4,55.5H1.6A1.606,1.606,0,0,1,0,53.9V44.272a1.605,1.605,0,0,1,1.6-1.6H12.4a1.605,1.605,0,0,1,1.6,1.6V53.9A1.606,1.606,0,0,1,12.4,55.5ZM1.6,43.543a.73.73,0,0,0-.729.729V53.9a.73.73,0,0,0,.729.729H12.4a.73.73,0,0,0,.729-.729V44.272a.73.73,0,0,0-.729-.729Zm0,0" transform="translate(0 -41.501)"/>
+  <path id="Path_2" data-name="Path 2" class="cls-1" d="M13.563,171.543H.438a.438.438,0,0,1,0-.875H13.563a.438.438,0,0,1,0,.875Zm0,0" transform="translate(0 -166.001)"/>
+  <path id="Path_3" data-name="Path 3" class="cls-1" d="M107.105,3.5a.438.438,0,0,1-.437-.437V.438a.438.438,0,0,1,.875,0V3.063A.438.438,0,0,1,107.105,3.5Zm0,0" transform="translate(-103.751)"/>
+  <path id="Path_4" data-name="Path 4" class="cls-1" d="M373.77,3.5a.438.438,0,0,1-.437-.437V.438a.438.438,0,0,1,.875,0V3.063A.438.438,0,0,1,373.77,3.5Zm0,0" transform="translate(-363.124)"/>
+</svg>

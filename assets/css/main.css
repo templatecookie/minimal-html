@@ -1,0 +1,457 @@
+/* === For Small Device ( 0px - 767px) == */
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+  margin: 0;
+}
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+button, button:hover,
+.btn:hover,
+input:hover, button:active,
+.btn:active,
+input:active, button:focus,
+.btn:focus,
+input:focus,
+.btn,
+input {
+  outline: none;
+  box-shadow: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/*
+ * Remove the text shadow on text selections (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ */
+
+::selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
+
+.btn {
+  -moz-user-select: none;
+  background: #000000 none repeat scroll 0 0;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 0;
+  padding: 12px 28px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.btn:hover {
+  background: #FFFFFF;
+  color: #000000;
+  border: 1px solid #707070;
+}
+
+.btn.btn_white {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.btn.btn_white:hover {
+  background: #000000;
+  color: #fff;
+}
+
+.btn.btn_yellow {
+  background: #FFE817;
+  color: #000000;
+  border: 1px solid #FFE817;
+}
+
+.btn.btn_yellow:hover {
+  background: #000000;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+}
+
+.btn.btn_prev i {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.services-item {
+  padding: 70px 40px;
+  transition: 0.3s all linear;
+}
+
+.services-item.active-item, .services-item:hover {
+  background-color: #FFE817;
+  border-radius: 7px;
+}
+
+.services-item__heading {
+  margin: 25px 0px;
+}
+
+.services-item__text {
+  line-height: 26px;
+}
+
+.testimonial-left__heading {
+  margin-bottom: 40px;
+}
+
+.testimonial-left__heading h5 {
+  color: #1F2020;
+  margin-bottom: 0 !important;
+}
+
+.testimonial-left__heading span {
+  color: #404040;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.testimonial-left__text {
+  margin-bottom: 40px;
+}
+
+.testimonial-left__text p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0 !important;
+}
+
+.testimonial-left__dots {
+  margin-bottom: 40px;
+}
+
+.testimonial-left__dots span {
+  display: inline-block;
+  margin-right: 8px;
+  height: 8px;
+  width: 8px;
+  border: 1px solid #1F2020;
+  background-color: transparent;
+  border-radius: 2px;
+}
+
+.testimonial-left__dots span.active_dots {
+  background-color: #1F2020;
+}
+
+.testimonial-left__buttons .btn_prev {
+  margin-right: 25px;
+}
+
+.blog-item__image {
+  position: relative;
+}
+
+.blog-item__image img {
+  height: 624px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-item__info {
+  position: absolute;
+  bottom: 70px;
+  left: 0px;
+  right: 0px;
+  margin: 0px 50px;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.blog-item__info h5 {
+  max-width: 370px;
+  line-height: 30px;
+  color: #1F2020;
+}
+
+.blog-item__info span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #404040;
+}
+
+.blog-item__bottom {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-item__bottom .blog_date span {
+  margin-left: 6px;
+}
+
+.blog-item__bottom .blog_likes span {
+  margin-left: 6px;
+}
+
+.blog-item__bottom .blog_comments span {
+  margin-left: 6px;
+}
+
+.contact-form form input {
+  height: 57px;
+  background-color: #F6F6F6;
+  border: none !important;
+  border-radius: 7px;
+  padding: 17px 0px 17px 20px;
+  margin-bottom: 30px;
+}
+
+.contact-form form input:focus {
+  box-shadow: none;
+  background-color: #F6F6F6;
+}
+
+.contact-form form textarea {
+  height: 114px;
+  background-color: #F6F6F6;
+  border: none !important;
+  border-radius: 7px;
+  padding: 17px 0px 0px 20px;
+  resize: none;
+  margin-bottom: 50px;
+}
+
+.contact-form form textarea:focus {
+  box-shadow: none;
+  background-color: #F6F6F6;
+}
+
+.contact-form form ::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #404040;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact-form form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 16px;
+  font-weight: 400;
+  color: #404040;
+}
+
+.contact-form form ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-size: 16px;
+  font-weight: 400;
+  color: #404040;
+}
+
+.section_heading {
+  font-size: 76px;
+  font-weight: 600;
+  line-height: 84px;
+  color: #1F2020;
+}
+
+.section_padding {
+  padding: 90px 0px;
+}
+
+h1, h2 {
+  font-size: 76px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #404040;
+}
+
+header {
+  background-color: #FFFFFF;
+  padding: 20px 0px;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menu__logo a {
+  color: #1F2020;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+header .menu__main {
+  display: flex;
+}
+
+header .menu__main li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #404040;
+  line-height: 24px;
+  margin-left: 36px;
+  transition: 0.3s;
+}
+
+header .menu__main li a:hover {
+  color: #1F2020;
+}
+
+header .menu__main li .active-menu {
+  margin-left: 0;
+  color: #1F2020;
+  font-weight: 600;
+  position: relative;
+}
+
+header .menu__main li .active-menu::after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 9px;
+  background-color: #1F2020;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.banner-area {
+  padding-top: 60px;
+  height: 907px;
+  background-color: #1F2020;
+  position: relative;
+}
+
+.banner-area .dots-image {
+  position: absolute;
+  top: 85px;
+  right: -10px;
+}
+
+.banner-area__heading {
+  margin-bottom: 27px;
+}
+
+.banner-area__heading h1 {
+  font-size: 58px;
+  line-height: 66px;
+}
+
+.banner-area__heading h1 span {
+  color: #FFE817;
+  text-decoration: underline;
+}
+
+.banner-area__text {
+  margin-bottom: 32px;
+}
+
+.banner-area__text p {
+  line-height: 26px;
+  max-width: 500px;
+}
+
+.about-me {
+  position: relative;
+}
+
+.about-me__dots {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.about-me__links {
+  /* IE 9 */
+  transform: rotate(90deg);
+  position: relative;
+}
+
+.about-me__links::before {
+  position: absolute;
+  content: '';
+  top: 12px;
+  left: -153px;
+  height: 1px;
+  width: 140px;
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+.services-item{
+    padding: 70px 40px;
+    transition: 0.3s all linear;
+    &.active-item, &:hover{
+        background-color: #FFE817;
+        border-radius: 7px;
+    }
+    &__heading{
+        margin: 25px 0px;
+    }
+    &__text{
+        line-height: 26px;
+    }
+}
