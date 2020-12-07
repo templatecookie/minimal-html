@@ -87,31 +87,149 @@ header{
 
 // About Section Starts Here
 .about-me{
+    background-color: #FAFAFC;
     position: relative;
     &__dots{
         position: absolute;
+        bottom: 155px;
+        right: 80px;
+        z-index: 1;
+    }
+    &__triangle{
+        position: absolute;
         bottom: 0;
         right: 0;
-    }
-    &__image{
-
+        
     }
     &__links{
-       -ms-transform: rotate(90deg); /* IE 9 */
-       transform: rotate(90deg);
-       position: relative;
-       &::before{
-           position: absolute;
-           content: '';
-           top: 12px;
-           left: -153px;
-           height: 1px;
-           width: 140px;
-           background-color: #ffffff;
-       }
+        transform: rotate(90deg);
+        background-color: #FFE817;
+        text-align: center;
+        width: 450px;
+        padding: 25px 0px;
+
+        a{
+            &:nth-of-type(1){
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    top: 10px;
+                    left: -152px;
+                    width: 140px;
+                    height: 1px;
+                    background-color: #1F2020;
+                }
+            }
+            color: #404040;
+            font-weight: 400;
+            line-height: 24px;
+            font-size: 14px;
+        }
+        span{
+            color: #404040;
+            font-size: 14px;
+            display: inline-block;
+            margin: 0px 14px;
+        }
     }
     &__info{
-
+        h3{
+            color: #1F2020;
+            max-width: 501px;
+            margin-bottom: 32px;
+        }
+        p{
+            max-width: 500px;
+            line-height: 26px;
+            &:nth-last-of-type(1){
+                margin-bottom: 32px;
+            }
+        }
+        button{
+            &:nth-last-of-type(1){
+                margin-left: 30px;
+            }
+        }
     }
 }
 // About Section Ends Here
+
+// Testimonials Section Starts Here
+.testimonials{
+    position: relative;
+    .testimonials-dots{
+    position: absolute;
+    right: 45px;
+    top: 15px;
+    }
+}
+// Testimonials Section Ends Here
+
+// Contact Section Starts Here
+.contact{
+    &-info{
+        p{
+            font-size: 18px;
+            color: #404040;
+            line-height: 30px;
+            max-width: 329px;
+            margin-bottom: 0 !important;
+        }
+        &__text{
+            margin-top: 50px;
+            h6{
+                color: #1F2020;
+                font-size: 34px;
+                line-height: 44px;
+                font-weight: 600;
+            }
+            p{
+                color: #404040;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        &__links{
+            margin-top: 50px;
+            h6{
+                font-size: 34px;
+                color: #1F2020;
+                line-height: 44px;
+                font-weight: 600;
+            }
+            a{  
+                margin-right: 30px;
+                &:nth-last-of-type(1){
+                    margin-right: 0;
+                }
+                &:hover{
+                    svg {
+                        transition: 0.3s all linear;
+                        transform: scale(1.5);
+                      path {
+                          transition: 0.3s all linear;
+                          fill: #CC58CB !important;   
+                      }
+                    }
+                }
+            }
+        }
+    }
+}
+// Contact Section Ends Here
+
+// Copyright Area Starts Here
+.copyright{
+    p{
+        color: #404040;
+        line-height: 19px;
+        font-size: 14px;
+        span{
+            margin-right: 4px;
+        }
+    }
+}
+// Copyright Area Starts Here
+
+
