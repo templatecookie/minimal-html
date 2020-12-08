@@ -346,6 +346,7 @@ header {
 
 header .menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -358,6 +359,7 @@ header .menu__logo a {
 }
 
 header .menu__main {
+  flex-wrap: wrap;
   display: flex;
 }
 
@@ -509,6 +511,17 @@ header .menu__main li .active-menu::after {
   margin-left: 30px;
 }
 
+.my-portfolio {
+  padding: 150px 0px;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+.my-portfolio .grid {
+  margin-bottom: 75px;
+}
+
 .testimonials {
   position: relative;
 }
@@ -582,4 +595,84 @@ header .menu__main li .active-menu::after {
 .copyright p span {
   margin-right: 4px;
 }
+
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    top: -3px;
+    right: 48px;
+    z-index: 9;
+    cursor: pointer;
+  }
+  .bar,
+  .bar::after,
+  .bar::before {
+    content: '';
+    position: absolute;
+    background-color: #acacac;
+    height: 2px;
+    width: 30px;
+    margin: auto;
+    top: 50%;
+    left: 0;
+  }
+  .bar {
+    margin-top: -2px;
+  }
+  .bar::before {
+    top: -10px;
+  }
+  .bar::after {
+    top: 10px;
+  }
+  .bar::before,
+  .bar::after {
+    transform: rotate(0deg);
+  }
+  .mobile-menu-open .menu {
+    transform: translateX(0);
+  }
+  .active .bar {
+    background-color: transparent;
+  }
+  .active .bar::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .active .bar::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .menu {
+    width: 400px;
+    height: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    line-height: 1;
+    font-size: 40px;
+    transform: translateX(-800px);
+    z-index: 99;
+    transition: transform 0.5s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+  }
+  .menu__logo {
+    display: none;
+  }
+  .menu__main {
+    width: 100%;
+    text-align: center;
+    padding-top: 160px;
+  }
+  .menu__main li {
+    display: block;
+    padding: 64px 16px;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
 /*# sourceMappingURL=main.css.map */
