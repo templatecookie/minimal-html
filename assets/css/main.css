@@ -358,12 +358,36 @@ header .menu__logo a {
   line-height: 28px;
 }
 
-header .menu__main {
-  flex-wrap: wrap;
-  display: flex;
+header .menu__bar {
+  display: none;
+  cursor: pointer;
 }
 
-header .menu__main li a {
+header .menu__bar span {
+  height: 3px;
+  width: 30px;
+  display: block;
+  background-color: #404040;
+}
+
+header .menu__bar span:nth-last-of-type(2) {
+  margin: 5px 0px;
+}
+
+header .menu__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header .menu__content .main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .menu__content .main-menu li a {
   font-weight: 400;
   font-size: 16px;
   color: #404040;
@@ -372,18 +396,18 @@ header .menu__main li a {
   transition: 0.3s;
 }
 
-header .menu__main li a:hover {
+header .menu__content .main-menu li a:hover {
   color: #1F2020;
 }
 
-header .menu__main li .active-menu {
+header .menu__content .main-menu li .active-menu {
   margin-left: 0;
   color: #1F2020;
   font-weight: 600;
   position: relative;
 }
 
-header .menu__main li .active-menu::after {
+header .menu__content .main-menu li .active-menu::after {
   position: absolute;
   content: '';
   bottom: -3px;
@@ -518,10 +542,6 @@ header .menu__main li .active-menu::after {
   background-size: cover;
 }
 
-.my-portfolio .grid {
-  margin-bottom: 75px;
-}
-
 .testimonials {
   position: relative;
 }
@@ -597,81 +617,6 @@ header .menu__main li .active-menu::after {
 }
 
 /* === For Small Device ( 0px - 767px) == */
-@media (max-width: 767px) {
-  .mobile-menu {
-    display: block;
-    position: fixed;
-    width: 48px;
-    height: 48px;
-    top: -3px;
-    right: 48px;
-    z-index: 9;
-    cursor: pointer;
-  }
-  .bar,
-  .bar::after,
-  .bar::before {
-    content: '';
-    position: absolute;
-    background-color: #acacac;
-    height: 2px;
-    width: 30px;
-    margin: auto;
-    top: 50%;
-    left: 0;
-  }
-  .bar {
-    margin-top: -2px;
-  }
-  .bar::before {
-    top: -10px;
-  }
-  .bar::after {
-    top: 10px;
-  }
-  .bar::before,
-  .bar::after {
-    transform: rotate(0deg);
-  }
-  .mobile-menu-open .menu {
-    transform: translateX(0);
-  }
-  .active .bar {
-    background-color: transparent;
-  }
-  .active .bar::before {
-    top: 0;
-    transform: rotate(45deg);
-  }
-  .active .bar::after {
-    top: 0;
-    transform: rotate(-45deg);
-  }
-  .menu {
-    width: 400px;
-    height: 100%;
-    background-color: #ffffff;
-    position: fixed;
-    line-height: 1;
-    font-size: 40px;
-    transform: translateX(-800px);
-    z-index: 99;
-    transition: transform 0.5s cubic-bezier(0.56, 0.1, 0.34, 0.91);
-  }
-  .menu__logo {
-    display: none;
-  }
-  .menu__main {
-    width: 100%;
-    text-align: center;
-    padding-top: 160px;
-  }
-  .menu__main li {
-    display: block;
-    padding: 64px 16px;
-  }
-}
-
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 /* === For Large Device ( 1024px - 1200px) == */

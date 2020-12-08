@@ -15,37 +15,57 @@ header{
                 line-height: 28px;
             }
         }
-        &__main{
-            flex-wrap: wrap;
-            display: flex;
-            li{
-                a{
-                    font-weight: 400;
-                    font-size: 16px;
-                    color: #404040; 
-                    line-height: 24px;
-                    margin-left: 36px;
-                    transition: 0.3s;
-                    &:hover{
-                        color: #1F2020;
-                    }
+        &__bar{
+            display: none;
+            cursor: pointer;
+            span{
+                height: 3px;
+                width: 30px;
+                display: block;
+                background-color: #404040;
+                &:nth-last-of-type(2){
+                    margin: 5px 0px;
                 }
-                .active-menu{
-                    margin-left: 0;
-                    color: #1F2020;
-                    font-weight: 600;
-                    position: relative;
-                    &::after{
-                        position: absolute;
-                        content: '';
-                        bottom: -3px;
-                        left: 0;
-                        right: 0;
-                        height: 3px;
-                        width: 9px;
-                        background-color: #1F2020;
-                        border-radius: 5px;
-                        margin: 0 auto;
+            }
+        }
+        &__content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .main-menu{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                li{
+                    a{
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #404040; 
+                        line-height: 24px;
+                        margin-left: 36px;
+                        transition: 0.3s;
+                        &:hover{
+                        color: #1F2020;
+                        }
+                    }
+                    .active-menu{
+                        margin-left: 0;
+                        color: #1F2020;
+                        font-weight: 600;
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            bottom: -3px;
+                            left: 0;
+                            right: 0;
+                            height: 3px;
+                            width: 9px;
+                            background-color: #1F2020;
+                            border-radius: 5px;
+                            margin: 0 auto;
+                        }
                     }
                 }
             }
@@ -163,12 +183,6 @@ header{
     background-position: center;
     background-repeat: repeat-x;
     background-size: cover;
-    .grid{
-        margin-bottom: 75px;
-        // .grid-item{
-        //     margin: 30px;
-        // }
-    }
 }
 // Portfolio Section Ends Here
 
@@ -253,81 +267,7 @@ header{
 // Responsive
 /* === For Small Device ( 0px - 767px) == */
 @include small {
-    .mobile-menu{
-        display: block;
-        position: fixed;
-        width: 48px;
-        height: 48px;
-        top: -3px;
-        right: 48px;
-        z-index: 9;
-        cursor: pointer;
-    }
-    .bar,
-    .bar::after,
-    .bar::before{
-            content: '';
-            position: absolute;
-            background-color: #acacac;
-            height: 2px;
-            width: 30px;
-            margin: auto;
-            top: 50%;
-            left: 0;
-    }
-    .bar{
-        margin-top: -2px;
-    }
-    .bar::before{
-        top: -10px;
-    }
-    .bar::after{
-        top: 10px;
-    }
-    .bar::before,
-    .bar::after{
-        transform: rotate(0deg);
-    }
-    .mobile-menu-open .menu{
-            transform: translateX(0);
-    }
-    
-    .active .bar{
-        background-color: transparent;
-    }
-    .active .bar::before{
-            top: 0;
-            transform: rotate(45deg);
-    }
-    .active .bar::after{
-            top: 0;
-            transform: rotate(-45deg);
-    }
-    
-    .menu{
-        width: 400px;
-        height: 100%;
-        background-color: #ffffff;
-        position: fixed;
-        line-height: 1;
-        font-size: 40px;
-        transform: translateX(-800px);
-        z-index: 99;
-        transition: transform 0.5s cubic-bezier(0.56, 0.1, 0.34, 0.91);
-    }
-    .menu__logo{
-        display: none;
-    }
-    .menu__main{
-        width: 100%;
-        text-align: center;
-        padding-top: 160px;
-    }
-    .menu__main li{
-        display: block;
-        padding: 64px 16px;
-    }      
-    
+   
 }
 /* === For Extra small Device ( 320px - 575px) == */
 @include ex_small {
