@@ -16,38 +16,83 @@
 	touch-action: manipulation;
 	transition: all 0.3s ease 0s;
 	vertical-align: middle;
-    white-space: nowrap;
-    &:focus{
-        box-shadow: none !important;
+	white-space: nowrap;
+
+	&:focus {
+		box-shadow: none !important;
 	}
-	&:hover{
-	background: #FFFFFF;
-	color: #000000;
-	border: 1px solid #707070;
-	}
-	&.btn_white{
+
+	&:hover {
 		background: #FFFFFF;
 		color: #000000;
-		&:hover{
+		border: 1px solid #707070;
+	}
+
+	&.btn_white {
+		background: #FFFFFF;
+		color: #000000;
+
+		&:hover {
 			background: #000000;
 			color: #fff;
 		}
 	}
-	&.btn_yellow{
+
+	&.btn_yellow {
 		background: #FFE817;
 		color: #000000;
 		border: 1px solid #FFE817;
-		&:hover{
+
+		&:hover {
 			background: #000000;
 			color: #FFFFFF;
 			border: 1px solid #000000;
 		}
 	}
-	&.btn_prev{
-		i{
+
+	&.btn_prev {
+		i {
+			font-size: 16px;
+			margin-left: 5px;
+		}
+	}
+
+	&.btn_next {
+		i {
 			font-size: 16px;
 			margin-left: 5px;
 		}
 	}
 }
+
 // Button Style Ends Here
+
+
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+	.btn {
+		font-size: 14px;
+
+		&.btn_prev {
+			i {
+				font-size: 14px;
+			}
+		}
+
+		&.btn_next {
+			i {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {}
+
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {}
+
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {}

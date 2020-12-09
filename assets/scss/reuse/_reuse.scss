@@ -1,46 +1,129 @@
-
 // Reuse This Class
 
 // Section Heading Starts Here
-.section_heading{
+.section_heading {
 	font-size: 76px;
 	font-weight: 600;
 	line-height: 84px;
 	color: #1F2020;
 	margin-bottom: 80px;
 }
+
 // Section Heading Ends Here
 
 
 // Section Padding Starts Here
-.section_padding{
+.section_padding {
 	padding: 90px 0px;
 }
+
 // Section Padding Ends Here
 
 // Typography Starts Here
-h1, h2{
+h1,
+h2 {
 	font-size: 76px;
 	font-weight: 600;
 }
 
-h3{
+h3 {
 	font-size: 40px;
 	font-weight: 600;
 }
-h4{
+
+h4 {
 	font-size: 30px;
 	font-weight: 600;
 }
-h5{
+
+h5 {
 	font-size: 25px;
 	font-weight: 600;
 }
-p{
+
+p {
 	font-size: 16px;
 	font-weight: 400;
 	color: #404040;
 }
+
 // Typography Ends Here
 
 // Reuse This Class 
+
+
+
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+	.section_heading {
+		font-size: 40px;
+		margin-bottom: 25px;
+		line-height: 48px;
+	}
+
+	.section_padding {
+		padding: 45px 0px;
+	}
+
+	h1,
+	h2 {
+		font-size: 38px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	h5 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {}
+
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+	.section_heading {
+		font-size: 50px;
+		margin-bottom: 50px;
+		line-height: 58px;
+	}
+
+	.section_padding {
+		padding: 70px 0px;
+	}
+
+	h1,
+	h2 {
+		font-size: 45px;
+	}
+
+	h3 {
+		font-size: 30px;
+	}
+
+	h4 {
+		font-size: 26px;
+	}
+
+	h5 {
+		font-size: 22px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+}
+
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {}

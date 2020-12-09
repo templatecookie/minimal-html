@@ -48,3 +48,40 @@
        } 
     }
 }
+
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+    .blog-item{
+        margin-bottom: 30px;
+        &__info{
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0px 35px;
+            h5{
+                line-height: 26px;
+            }
+            .blog_likes{
+                margin: 10px 0px;
+            }
+        }
+        &__bottom{
+            margin-top: 15px;
+        }
+    }
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+    .blog-item{
+        margin-bottom: 30px;
+    }
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
+    .blog-item__bottom{
+        flex-direction: column;
+    }
+}
