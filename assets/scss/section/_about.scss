@@ -1,0 +1,65 @@
+// About Section Starts Here
+.about-me {
+    background-color: #FAFAFC;
+    position: relative;
+
+    &__dots {
+        position: absolute;
+        bottom: 155px;
+        right: 80px;
+        z-index: 1;
+    }
+
+    &__triangle {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+
+    // &__links {
+        
+    // } 
+
+    &__info {
+        h3 {
+            color: #1F2020;
+            max-width: 501px;
+            margin-bottom: 32px;
+        }
+
+        p {
+            max-width: 500px;
+            line-height: 26px;
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 32px;
+            }
+        }
+
+        button {
+            &:nth-last-of-type(1) {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+// About Section Ends Here
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+}
+/* === start fromt   ( 768px - ) == */
+@include min{
+
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
+}

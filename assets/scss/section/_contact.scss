@@ -1,0 +1,62 @@
+// Contact Section Starts Here
+.contact {
+    &-info {
+        p {
+            font-size: 18px;
+            color: #404040;
+            line-height: 30px;
+            max-width: 329px;
+            margin-bottom: 0 !important;
+        }
+
+        &__text {
+            margin-top: 50px;
+
+            h6 {
+                color: #1F2020;
+                font-size: 34px;
+                line-height: 44px;
+                font-weight: 600;
+            }
+
+            p {
+                color: #404040;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        &__links {
+            margin-top: 50px;
+
+            h6 {
+                font-size: 34px;
+                color: #1F2020;
+                line-height: 44px;
+                font-weight: 600;
+            }
+
+            a {
+                margin-right: 30px;
+
+                &:nth-last-of-type(1) {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    svg {
+                        transition: 0.3s all linear;
+                        transform: scale(1.5);
+
+                        path {
+                            transition: 0.3s all linear;
+                            fill: #CC58CB !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Contact Section Ends Here

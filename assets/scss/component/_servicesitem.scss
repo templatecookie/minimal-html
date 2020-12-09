@@ -1,14 +1,18 @@
-.services-item{
+.services-item {
     padding: 70px 40px;
     transition: 0.3s all linear;
-    &.active-item, &:hover{
+
+    &.active-item,
+    &:hover {
         background-color: #FFE817;
         border-radius: 7px;
     }
-    &__heading{
+
+    &__heading {
         margin: 25px 0px;
     }
-    &__text{
+
+    &__text {
         line-height: 26px;
     }
 }
@@ -16,33 +20,38 @@
 // Responsive
 /* === For Small Device ( 0px - 767px) == */
 @include small {
-    .services-item{
+    .services-item {
         padding: 35px 20px;
         margin-bottom: 30px;
-        &__heading{
+
+        &__heading {
             margin: 20px 0px;
         }
-        &__text{
+
+        &__text {
             line-height: 22px;
         }
     }
 }
+
 /* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {
-}
+@include ex_small {}
+
 /* === For Medium Device ( 768px - 1023px) == */
 @include medium {
-    .services-item{
+    .services-item {
         padding: 45px 30px;
         margin-bottom: 30px;
-        &__heading{
+
+        &__heading {
             margin: 30px 0px;
         }
-        &__text{
+
+        &__text {
             line-height: 38px;
         }
     }
 }
+
 /* === For Large Device ( 1024px - 1200px) == */
-@include large {
-}
+@include large {}

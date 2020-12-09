@@ -1,27 +1,33 @@
-.testimonial-left{
-    &__heading{
+.testimonial-left {
+    &__heading {
         margin-bottom: 40px;
-        h5{
+
+        h5 {
             color: #1F2020;
             margin-bottom: 0 !important;
         }
-        span{
+
+        span {
             color: #404040;
             font-size: 18px;
             font-weight: 400;
         }
     }
-    &__text{
+
+    &__text {
         margin-bottom: 40px;
-        p{
+
+        p {
             font-size: 20px;
             line-height: 30px;
             margin-bottom: 0 !important;
         }
     }
-    &__dots{
+
+    &__dots {
         margin-bottom: 40px;
-        span{
+
+        span {
             display: inline-block;
             margin-right: 8px;
             height: 8px;
@@ -29,13 +35,15 @@
             border: 1px solid #1F2020;
             background-color: transparent;
             border-radius: 2px;
-            &.active_dots{
+
+            &.active_dots {
                 background-color: #1F2020;
             }
         }
     }
-    &__buttons{
-        .btn_prev{
+
+    &__buttons {
+        .btn_prev {
             margin-right: 25px;
         }
     }

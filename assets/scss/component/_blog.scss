@@ -1,13 +1,15 @@
-.blog-item{
-    &__image{
+.blog-item {
+    &__image {
         position: relative;
-        img{
+
+        img {
             height: 624px;
-            width:100%;
+            width: 100%;
             object-fit: cover;
         }
     }
-    &__info{
+
+    &__info {
         position: absolute;
         bottom: 70px;
         left: 0px;
@@ -15,71 +17,82 @@
         margin: 0px 50px;
         background-color: #ffffff;
         padding: 30px;
-        h5{
+
+        h5 {
             max-width: 370px;
             line-height: 30px;
             color: #1F2020;
         }
-        span{
+
+        span {
             font-size: 13px;
             font-weight: 400;
             color: #404040;
         }
     }
-    &__bottom{
+
+    &__bottom {
         margin-top: 30px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-       .blog_date{
-           span{
-                margin-left: 6px;
-           }
-       }
-       .blog_likes{
-            span{
+
+        .blog_date {
+            span {
                 margin-left: 6px;
             }
-       } 
-       .blog_comments{
-            span{
+        }
+
+        .blog_likes {
+            span {
                 margin-left: 6px;
             }
-       } 
+        }
+
+        .blog_comments {
+            span {
+                margin-left: 6px;
+            }
+        }
     }
 }
 
 // Responsive
 /* === For Small Device ( 0px - 767px) == */
 @include small {
-    .blog-item{
+    .blog-item {
         margin-bottom: 30px;
-        &__info{
+
+        &__info {
             top: 50%;
             transform: translateY(-50%);
             margin: 0px 35px;
-            h5{
+
+            h5 {
                 line-height: 26px;
             }
-            
+
         }
-        &__bottom{
+
+        &__bottom {
             margin-top: 15px;
         }
     }
 }
+
 /* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {
-}
+@include ex_small {}
+
 /* === For Medium Device ( 768px - 1023px) == */
 @include medium {
-    .blog-item{
+    .blog-item {
         margin-bottom: 30px;
     }
 }
+
 /* === For Large Device ( 1024px - 1200px) == */
 @include large {
-    .blog-item__bottom{
+    .blog-item__bottom {
         flex-direction: column;
     }
 }

@@ -1,0 +1,56 @@
+// Banner Section Starts Here
+.banner-area {
+    padding-top: 60px;
+    height: 100vh;
+    background-color: #1F2020;
+    position: relative;
+
+    .dots-image {
+        position: absolute;
+        top: 85px;
+        right: -10px;
+    }
+
+    &__heading {
+        margin-bottom: 27px;
+
+        h1 {
+            font-size: 58px;
+            line-height: 66px;
+
+            span {
+                color: #FFE817;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__text {
+        margin-bottom: 32px;
+
+        p {
+            line-height: 26px;
+            max-width: 500px;
+        }
+    }
+
+}
+
+// Banner Section Ends Here
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+}
+/* === start fromt   ( 768px - ) == */
+@include min{
+
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
+}

@@ -1,18 +1,20 @@
-.contact-form{
-    form{
-        input{
+.contact-form {
+    form {
+        input {
             height: 57px;
             background-color: #F6F6F6;
             border: none !important;
             border-radius: 7px;
             padding: 17px 0px 17px 20px;
             margin-bottom: 30px;
-            &:focus{
+
+            &:focus {
                 box-shadow: none;
                 background-color: #F6F6F6;
             }
         }
-        textarea{
+
+        textarea {
             height: 114px;
             background-color: #F6F6F6;
             border: none !important;
@@ -20,29 +22,33 @@
             padding: 17px 0px 0px 20px;
             resize: none;
             margin-bottom: 50px;
-            &:focus{
+
+            &:focus {
                 box-shadow: none;
                 background-color: #F6F6F6;
             }
         }
+
         ::placeholder {
             font-size: 16px;
             font-weight: 400;
             color: #404040;
-            opacity: 1; /* Firefox */
-          }
-          
-          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            opacity: 1;
+            /* Firefox */
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
             font-size: 16px;
             font-weight: 400;
             color: #404040;
-          }
-          
-          ::-ms-input-placeholder { /* Microsoft Edge */
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
             font-size: 16px;
             font-weight: 400;
             color: #404040;
-          }
+        }
     }
 }
-

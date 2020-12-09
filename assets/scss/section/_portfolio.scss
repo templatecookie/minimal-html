@@ -1,0 +1,49 @@
+// Portfolio Section Starts Here
+.my-portfolio {
+    padding: 150px 0px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
+    .column {
+        flex: 25%;
+        max-width: 33.3%;
+        padding: 0px 15px;
+
+        img {
+            margin-bottom: 30px;
+            vertical-align: middle;
+            width: 100%;
+            cursor: pointer;
+            transition: 0.3s linear;
+
+            &:hover {
+                border-radius: 7px;
+                transform: scale(0.9);
+                filter: grayscale(50%);
+            }
+        }
+    }
+}
+
+// Portfolio Section Ends Here
+
+
+
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+}
+/* === start fromt   ( 768px - ) == */
+@include min{
+
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
+}

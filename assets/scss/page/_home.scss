@@ -1,516 +1,364 @@
-// Banner Section Starts Here
-.banner-area{
-    padding-top: 60px;
-    min-height: 100vh;
-    background-color: #1F2020;
-    position: relative;
-    .dots-image{
-        position: absolute;
-        top: 85px;
-        right: -10px;
-    }
-    &__heading{
-        margin-bottom: 27px;
-        h1{
-            font-size: 58px;
-            line-height: 66px;
-            span{
-                color: #FFE817;
-                text-decoration: underline;
-            }
-        }
-    }
-    &__text{
-        margin-bottom: 32px;
-        p{
-            line-height: 26px;
-            max-width: 500px;
-        }
-    }
-   
-}
-// Banner Section Ends Here
-
-// About Section Starts Here
-.about-me{
-    background-color: #FAFAFC;
-    position: relative;
-    overflow: hidden;
-    &__image{
-        position: relative;
-    }  
-    &__dots{
-        position: absolute;
-        bottom: 155px;
-        right: 80px;
-        z-index: 1;
-    }
-    &__triangle{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        
-    }
-    .myself{
-        position: relative;
-    }
-    &__overlay{
-        position: absolute;
-        left: -275px;
-        top: 425px;
-        transform: rotate(90deg);
-
-        @include medium{
-            top: 320px;
-        }
-        @media(max-width: 1199px) {
-            top: 320px;
-        }
-        @media(max-width: 991px) {
-            top: 425px;
-            left: -195px;
-        }
-        @include small {
-            top: 398px;
-            left: -275px;
-        }
-        @include ex_small {
-            position: relative;
-            top: 0px;   
-            left: 0px;
-            transform: rotate(0deg);
-            overflow: hidden;
-        }
-    }
-    &__links{
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-        // transform: rotate(90deg);
-        background-color: #FFE817;
-        display: flex;
-        width: 479px;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 25px 0px;
-        padding-right: 42px;
-        @include ex_small {
-            max-width: 100%;
-        }
-        a{
-            color: #404040;
-            font-size: 14px;
-            line-height: 22px;
-            &:nth-of-type(1){
-                position: relative;
-                &::before{
-                    position: absolute;
-                    content: '';
-                    width: 140px;
-                    height: 1px;
-                    background-color: #1F2020;
-                    bottom: 10px;
-                    right: 82px;
-                }
-            }
-        }
-        span{
-            color: #404040;
-            font-size: 14px;
-            margin: 0 14px;
-        }
-    }
-    &__info{
-        h3{
-            color: #1F2020;
-            max-width: 501px;
-            margin-bottom: 32px;
-        }
-        p{
-            max-width: 500px;
-            line-height: 26px;
-            &:nth-last-of-type(1){
-                margin-bottom: 32px;
-            }
-        }
-        button{
-            &:nth-last-of-type(1){
-                margin-left: 30px;
-            }
-        }
-    }
-}
-// About Section Ends Here
-
-// Portfolio Section Starts Here
-.my-portfolio{
-    padding: 150px 0px;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    .column{
-        flex: 25%;
-        max-width: 33.3%;
-        padding: 0px 15px;
-        img {
-            margin-bottom: 30px;
-            vertical-align: middle;
-            width: 100%;
-            cursor: pointer;
-            transition: 0.3s linear;
-            &:hover {
-                border-radius: 7px;
-                transform: scale(0.9);
-                filter: grayscale(50%);
-              }
-          }
-    }
-}
-// Portfolio Section Ends Here
-
-// Testimonials Section Starts Here
-.testimonials{
-    position: relative;
-    .testimonials-dots{
-    position: absolute;
-    right: 45px;
-    top: 15px;
-    }
-}
-// Testimonials Section Ends Here
-
-// Contact Section Starts Here
-.contact{
-    &-info{
-        p{
-            font-size: 18px;
-            color: #404040;
-            line-height: 30px;
-            max-width: 329px;
-            margin-bottom: 0 !important;
-            @include ex_small {
-                max-width: 100%;
-            }
-        }
-        &__text{
-            margin-top: 50px;
-            h6{
-                color: #1F2020;
-                font-size: 34px;
-                line-height: 44px;
-                font-weight: 600;
-            }
-            p{
-                color: #404040;
-                font-size: 20px;
-                line-height: 30px;
-            }
-        }
-        &__links{
-            margin-top: 50px;
-            h6{
-                font-size: 34px;
-                color: #1F2020;
-                line-height: 44px;
-                font-weight: 600;
-            }
-            a{  
-                margin-right: 30px;
-                &:nth-last-of-type(1){
-                    margin-right: 0;
-                }
-                &:hover{
-                    svg {
-                        transition: 0.3s all linear;
-                        transform: scale(1.5);
-                      path {
-                          transition: 0.3s all linear;
-                          fill: #CC58CB !important;   
-                      }
-                    }
-                }
-            }
-        }
-    }
-}
-// Contact Section Ends Here
-
 // Copyright Area Starts Here
-.copyright{
-    p{
+.copyright {
+    p {
         color: #404040;
         line-height: 19px;
         font-size: 14px;
-        span{
+
+        span {
             margin-right: 4px;
         }
     }
 }
+
 // Copyright Area Starts Here
-
-
 // Responsive
 /* === For Small Device ( 0px - 767px) == */
 @include small {
-    .banner-area{
+    .banner-area {
         padding-top: 40px;
-        &__heading{
+        height: auto;
+
+        img {
+            display: none;
+        }
+
+        &__heading {
             margin-bottom: 20px;
-            h1{
+
+            h1 {
                 font-size: 30px;
                 line-height: 38px
             }
         }
-        &__text{
+
+        &__text {
             margin-bottom: 20px;
-            p{
+
+            p {
                 line-height: 26px;
                 max-width: 100%;
             }
         }
-        .dots-image{
+
+        .dots-image {
             display: none;
         }
     }
-    .my-portfolio{
+
+    .my-portfolio {
         padding: 0;
-        .column{
+
+        .column {
             padding: 0px 8px;
+
             img {
                 margin-bottom: 16px;
             }
         }
     }
-    .testimonials{
-        &-dots{
+
+    .testimonials {
+        &-dots {
             display: none;
         }
-        .testimonial-left{
+
+        .testimonial-left {
             margin-bottom: 30px;
-            @include ex_small {
-                text-align: center;
-            }
-            &__heading{
+
+            &__heading {
                 margin-bottom: 12px;
             }
-            &__text{
+
+            &__text {
                 margin-bottom: 20px;
-                p{
+
+                p {
                     font-size: 16px;
                     line-height: 24px;
                 }
             }
-            &__dots{
+
+            &__dots {
                 margin-bottom: 20px;
+                text-align: center;
             }
-            &__buttons{
+
+            &__buttons {
                 text-align: center;
             }
         }
     }
-    .contact-info{
+
+    .contact-info {
         text-align: center;
-        p{
+
+        p {
             font-size: 14px;
             line-height: 22px;
-            
+            max-width: 100%;
         }
-        &__text{
+
+        &__text {
             margin-top: 25px;
         }
-        &__text{
-            h6{
+
+        &__text {
+            h6 {
                 font-size: 20px;
                 line-height: 28px;
                 margin-bottom: 3px;
             }
         }
-        &__links{
+
+        &__links {
             margin-top: 25px;
             margin-bottom: 30px;
-            h6{
+
+            h6 {
                 font-size: 20px;
                 line-height: 28px;
                 margin-bottom: 10px;
             }
         }
-        
+
     }
-    .contact{
+
+    .contact {
         padding-bottom: 35px;
     }
-    .contact-form{
+
+    .contact-form {
         order: 2;
         text-align: center;
-        form{
-            input{
+
+        form {
+            input {
                 height: 50px;
                 margin-bottom: 25px;
             }
-            textarea{
+
+            textarea {
                 height: 110px;
                 margin-bottom: 25px;
             }
         }
     }
-    .about-me{
+
+    .about-me {
         padding-bottom: 25px;
         z-index: 3;
-        &__image{
+
+        &__image {
             margin-bottom: 30px;
         }
-        &__info{
+
+        &__info {
             text-align: center;
-            h3{
+
+            h3 {
                 margin-bottom: 20px;
             }
-            p{
-                text-align:left;
+
+            p {
+                text-align: left;
                 line-height: 22px;
-                &:nth-last-of-type(1){
+
+                &:nth-last-of-type(1) {
                     margin-bottom: 20px;
                     margin-top: -10px;
                 }
             }
-            button{
-                &:nth-last-of-type(1){
+
+            button {
+                &:nth-last-of-type(1) {
                     margin-left: 10px;
                 }
             }
         }
-        &__dots{
+
+        &__dots {
             display: none;
         }
-        &__triangle{
+
+        &__triangle {
             z-index: -3;
             filter: grayscale(50%);
         }
     }
 }
+
 /* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {
-}
+@include ex_small {}
+
 /* === For Medium Device ( 768px - 1023px) == */
 @include medium {
-    .banner-area{
-      padding: 40px 0px;
-        &__heading{
+    .banner-area {
+        padding-top: 90px;
+        height: auto;
+
+        &__heading {
             margin-bottom: 20px;
-            h1{
+
+            h1 {
                 font-size: 45px;
                 line-height: 53px
             }
         }
-        &__text{
+
+        &__text {
             margin-bottom: 20px;
-            p{
+
+            p {
                 line-height: 26px;
                 max-width: 100%;
             }
         }
     }
-    .my-portfolio{
+
+    .my-portfolio {
         padding: 0;
     }
-    .testimonials{
-        .testimonial-left{
+
+    .testimonials {
+        .testimonial-left {
             margin-bottom: 30px;
-            &__heading{
+
+            &__heading {
                 margin-bottom: 20px;
             }
-            &__text{
+
+            &__text {
                 margin-bottom: 30px;
-                p{
+
+                p {
                     font-size: 18px;
                     line-height: 26px;
                 }
             }
-            &__dots{
+
+            &__dots {
                 margin-bottom: 30px;
             }
-            &__buttons{
+
+            &__buttons {
                 text-align: left;
             }
         }
     }
-    .contact{
+
+    .contact {
         padding-bottom: 50px;
     }
+
     .contact-info__links h6,
-    .contact-info__text h6{
+    .contact-info__text h6 {
         font-size: 30px;
     }
-    .about-me{
+
+    .about-me {
         padding-bottom: 25px;
         z-index: 3;
-        &__image{
+
+        &__image {
             text-align: center;
             margin-bottom: 30px;
         }
-        &__info{
+
+        &__info {
             text-align: center;
-            h3{
+
+            h3 {
                 font-size: 24px;
                 margin-bottom: 20px;
                 max-width: 100%;
                 text-align: left;
             }
-            p{
+
+            p {
                 font-size: 14px;
                 text-align: justify;
                 line-height: 26px;
                 max-width: 90%;
-                &:nth-last-of-type(1){
+
+                &:nth-last-of-type(1) {
                     margin-bottom: 30px;
                 }
             }
-            button{
-                &:nth-last-of-type(1){
+
+            button {
+                &:nth-last-of-type(1) {
                     margin-left: 15px;
                 }
             }
         }
-        &__dots{
+
+        &__dots {
             bottom: 105px;
             right: 10px;
             width: 80px;
         }
-        &__triangle{
+
+        &__triangle {
             z-index: -3;
             filter: grayscale(20%);
         }
     }
 }
+
 /* === For Large Device ( 1024px - 1200px) == */
 @include large {
-    .contact{
+    .banner-area {
+        height: auto;
+    }
+
+    .contact {
         padding-bottom: 50px;
     }
-    .about-me{
+
+    .about-me {
         z-index: 3;
-        &__dots{
+
+        &__dots {
             bottom: 0px;
             right: 5px;
             width: 90px;
         }
-        &__triangle{
+
+        &__triangle {
             z-index: -3;
             filter: grayscale(10%);
         }
     }
 }
+
 // For Laptop
-@media (min-width: 1201px) and (max-width: 1439px) { 
-    .about-me{
+@media (min-width: 1201px) and (max-width: 1439px) {
+    .banner-area {
+        height: auto;
+    }
+
+    .about-me {
         z-index: 3;
-        &__dots{
+
+        &__dots {
             bottom: 65px;
             right: 25px;
             width: 90px;
         }
-        &__triangle{
+
+        &__triangle {
             z-index: -3;
             filter: grayscale(10%);
         }
     }
- }
+}
+
+//  For About Section
+@media (min-width: 992px) and (max-width: 1023px) {
+    .about-me__dots {
+        width: 0px;
+        bottom: 0px;
+        right: 5px;
+    }
+}
