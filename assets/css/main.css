@@ -655,29 +655,6 @@ p {
 
 /* === For Small Device ( 0px - 767px) == */
 @media (max-width: 767px) {
-  .testimonials-dots {
-    display: none;
-  }
-  .testimonials .testimonial-left {
-    margin-bottom: 30px;
-  }
-  .testimonials .testimonial-left__heading {
-    margin-bottom: 12px;
-  }
-  .testimonials .testimonial-left__text {
-    margin-bottom: 20px;
-  }
-  .testimonials .testimonial-left__text p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .testimonials .testimonial-left__dots {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .testimonials .testimonial-left__buttons {
-    text-align: center;
-  }
   .contact-info {
     text-align: center;
   }
@@ -723,25 +700,6 @@ p {
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .testimonials .testimonial-left {
-    margin-bottom: 30px;
-  }
-  .testimonials .testimonial-left__heading {
-    margin-bottom: 20px;
-  }
-  .testimonials .testimonial-left__text {
-    margin-bottom: 30px;
-  }
-  .testimonials .testimonial-left__text p {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .testimonials .testimonial-left__dots {
-    margin-bottom: 30px;
-  }
-  .testimonials .testimonial-left__buttons {
-    text-align: left;
-  }
   .contact {
     padding-bottom: 50px;
   }
@@ -1042,6 +1000,59 @@ p {
   top: 15px;
 }
 
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .testimonials-dots {
+    display: none;
+  }
+  .testimonials .testimonial-left {
+    margin-bottom: 30px;
+  }
+  .testimonials .testimonial-left__heading {
+    margin-bottom: 12px;
+  }
+  .testimonials .testimonial-left__text {
+    margin-bottom: 20px;
+  }
+  .testimonials .testimonial-left__text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .testimonials .testimonial-left__dots {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .testimonials .testimonial-left__buttons {
+    text-align: center;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .testimonials .testimonial-left {
+    margin-bottom: 30px;
+  }
+  .testimonials .testimonial-left__heading {
+    margin-bottom: 20px;
+  }
+  .testimonials .testimonial-left__text {
+    margin-bottom: 30px;
+  }
+  .testimonials .testimonial-left__text p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .testimonials .testimonial-left__dots {
+    margin-bottom: 30px;
+  }
+  .testimonials .testimonial-left__buttons {
+    text-align: left;
+  }
+}
+
+/* === start fromt   ( 768px - ) == */
+/* === For Large Device ( 1024px - 1200px) == */
 .my-portfolio {
   padding: 150px 0px;
   background-position: center;

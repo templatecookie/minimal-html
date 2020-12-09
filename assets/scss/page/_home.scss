@@ -19,37 +19,7 @@
 
     
 
-    .testimonials {
-        &-dots {
-            display: none;
-        }
 
-        .testimonial-left {
-            margin-bottom: 30px;
-
-            &__heading {
-                margin-bottom: 12px;
-            }
-
-            &__text {
-                margin-bottom: 20px;
-
-                p {
-                    font-size: 16px;
-                    line-height: 24px;
-                }
-            }
-
-            &__dots {
-                margin-bottom: 20px;
-                text-align: center;
-            }
-
-            &__buttons {
-                text-align: center;
-            }
-        }
-    }
 
     .contact-info {
         text-align: center;
@@ -118,32 +88,7 @@
 
 
 
-    .testimonials {
-        .testimonial-left {
-            margin-bottom: 30px;
 
-            &__heading {
-                margin-bottom: 20px;
-            }
-
-            &__text {
-                margin-bottom: 30px;
-
-                p {
-                    font-size: 18px;
-                    line-height: 26px;
-                }
-            }
-
-            &__dots {
-                margin-bottom: 30px;
-            }
-
-            &__buttons {
-                text-align: left;
-            }
-        }
-    }
 
     .contact {
         padding-bottom: 50px;
