@@ -1,84 +1,7 @@
-// Header Starts Here
-header{
-    height: calc(100vh - 88vh);
-    background-color: #FFFFFF;
-    padding: 20px 0px;
-    .menu{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        &__logo{
-            a{
-                color: #1F2020;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 28px;
-            }
-        }
-        &__bar{
-            display: none;
-            cursor: pointer;
-            span{
-                height: 3px;
-                width: 30px;
-                display: block;
-                background-color: #404040;
-                &:nth-last-of-type(2){
-                    margin: 5px 0px;
-                }
-            }
-        }
-        &__content{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .main-menu{
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-between;
-                li{
-                    a{
-                        font-weight: 400;
-                        font-size: 16px;
-                        color: #404040; 
-                        line-height: 24px;
-                        margin-left: 36px;
-                        transition: 0.3s;
-                        &:hover{
-                        color: #1F2020;
-                        }
-                    }
-                    .active-menu{
-                        margin-left: 0;
-                        color: #1F2020;
-                        font-weight: 600;
-                        position: relative;
-                        &::after{
-                            position: absolute;
-                            content: '';
-                            bottom: -3px;
-                            left: 0;
-                            right: 0;
-                            height: 3px;
-                            width: 9px;
-                            background-color: #1F2020;
-                            border-radius: 5px;
-                            margin: 0 auto;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-// Header Ends Here
-
 // Banner Section Starts Here
 .banner-area{
     padding-top: 60px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #1F2020;
     position: relative;
     .dots-image{
@@ -112,6 +35,10 @@ header{
 .about-me{
     background-color: #FAFAFC;
     position: relative;
+    overflow: hidden;
+    &__image{
+        position: relative;
+    }  
     &__dots{
         position: absolute;
         bottom: 155px;
@@ -124,36 +51,73 @@ header{
         right: 0;
         
     }
-    &__links{
+    .myself{
+        position: relative;
+    }
+    &__overlay{
+        position: absolute;
+        left: -275px;
+        top: 425px;
         transform: rotate(90deg);
-        background-color: #FFE817;
-        text-align: center;
-        width: 450px;
-        padding: 25px 0px;
 
+        @include medium{
+            top: 320px;
+        }
+        @media(max-width: 1199px) {
+            top: 320px;
+        }
+        @media(max-width: 991px) {
+            top: 425px;
+            left: -195px;
+        }
+        @include small {
+            top: 398px;
+            left: -275px;
+        }
+        @include ex_small {
+            position: relative;
+            top: 0px;   
+            left: 0px;
+            transform: rotate(0deg);
+            overflow: hidden;
+        }
+    }
+    &__links{
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // transform: rotate(90deg);
+        background-color: #FFE817;
+        display: flex;
+        width: 479px;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 25px 0px;
+        padding-right: 42px;
+        @include ex_small {
+            max-width: 100%;
+        }
         a{
+            color: #404040;
+            font-size: 14px;
+            line-height: 22px;
             &:nth-of-type(1){
                 position: relative;
                 &::before{
                     position: absolute;
                     content: '';
-                    top: 10px;
-                    left: -152px;
                     width: 140px;
                     height: 1px;
                     background-color: #1F2020;
+                    bottom: 10px;
+                    right: 82px;
                 }
             }
-            color: #404040;
-            font-weight: 400;
-            line-height: 24px;
-            font-size: 14px;
         }
         span{
             color: #404040;
             font-size: 14px;
-            display: inline-block;
-            margin: 0px 14px;
+            margin: 0 14px;
         }
     }
     &__info{
@@ -224,6 +188,9 @@ header{
             line-height: 30px;
             max-width: 329px;
             margin-bottom: 0 !important;
+            @include ex_small {
+                max-width: 100%;
+            }
         }
         &__text{
             margin-top: 50px;
@@ -285,9 +252,6 @@ header{
 // Responsive
 /* === For Small Device ( 0px - 767px) == */
 @include small {
-    header{
-        display: none;
-    }
     .banner-area{
         padding-top: 40px;
         &__heading{
@@ -323,6 +287,9 @@ header{
         }
         .testimonial-left{
             margin-bottom: 30px;
+            @include ex_small {
+                text-align: center;
+            }
             &__heading{
                 margin-bottom: 12px;
             }
@@ -346,6 +313,7 @@ header{
         p{
             font-size: 14px;
             line-height: 22px;
+            
         }
         &__text{
             margin-top: 25px;
@@ -424,11 +392,8 @@ header{
 }
 /* === For Medium Device ( 768px - 1023px) == */
 @include medium {
-    header{
-        display: none;
-    }
     .banner-area{
-        padding-top: 40px;
+      padding: 40px 0px;
         &__heading{
             margin-bottom: 20px;
             h1{

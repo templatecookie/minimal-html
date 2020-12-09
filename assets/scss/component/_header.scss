@@ -1,0 +1,173 @@
+// Header Starts Here
+header {
+    background-color: #FFFFFF;
+    padding: 20px 0px;
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        &__logo {
+            max-width: 300px;
+            a {
+                color: #1F2020;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        &__bar {
+            display: none;
+            cursor: pointer;
+
+            span {
+                height: 3px;
+                width: 30px;
+                display: block;
+                background-color: #404040;
+
+                &:nth-last-of-type(2) {
+                    margin: 5px 0px;
+                }
+            }
+        }
+        &-data {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #404040;
+                    line-height: 24px;
+                    margin-left: 36px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: #1F2020;
+                    }
+                }
+
+                .active-menu {
+                    margin-left: 0;
+                    color: #1F2020;
+                    font-weight: 600;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        bottom: -3px;
+                        left: 0;
+                        right: 0;
+                        height: 3px;
+                        width: 9px;
+                        background-color: #1F2020;
+                        border-radius: 5px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+        .mobile-menu{
+            background-color: #e5e6e9;
+            max-height: 0px;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s linear;
+            &.active{
+                visibility: visible;
+                pointer-events: all;
+                opacity: 1;
+                max-height: 650px;
+                padding-bottom: 30px;
+                padding-left: 25px;
+                margin: 15px 0px 0px 0px;
+            
+          }
+            &__main{
+                li{
+                    a{  
+                        display: inline-block;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #404040;
+                        line-height: 24px;
+                        margin: 10px 0px;
+                        padding: 10px 20px;
+                        transition: 0.3s;
+                        &:hover {
+                                color: #1F2020;
+                        }
+                    }
+                    .active-menu {
+                        margin-left: 0;
+                        color: #1F2020;
+                        font-weight: 600;
+                        position: relative;
+    
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            bottom: -3px;
+                            left: 0;
+                            right: 0;
+                            height: 3px;
+                            width: 20px;
+                            background-color: #1F2020;
+                            border-radius: 5px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+// Header Ends Here
+
+
+// Responsive
+/* === For Small Device ( 0px - 767px) == */
+@include small {
+    header{
+        .menu {
+            width: 100%;
+            justify-content: space-between;
+            &__logo {
+                width: 50%;
+            }
+            &__bar {
+                width: max-content;
+                display: block;
+                // &.active{
+
+                // }
+            }
+            &-data, &-button{
+                display: none;
+            }
+        }
+       
+    }
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+
+}
+@include min{
+    .mobile-menu {
+        display: none;
+    }
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
+}

@@ -1,6 +1,7 @@
 /* === For Small Device ( 0px - 767px) == */
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
+/* === start fromt   ( 768px - ) == */
 /* === For Large Device ( 1024px - 1200px) == */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
@@ -77,6 +78,166 @@ abbr[title] {
   text-shadow: none;
 }
 
+header {
+  background-color: #FFFFFF;
+  padding: 20px 0px;
+}
+
+header .menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .menu__logo {
+  max-width: 300px;
+}
+
+header .menu__logo a {
+  color: #1F2020;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+header .menu__bar {
+  display: none;
+  cursor: pointer;
+}
+
+header .menu__bar span {
+  height: 3px;
+  width: 30px;
+  display: block;
+  background-color: #404040;
+}
+
+header .menu__bar span:nth-last-of-type(2) {
+  margin: 5px 0px;
+}
+
+header .menu-data {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .menu-data li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #404040;
+  line-height: 24px;
+  margin-left: 36px;
+  transition: 0.3s;
+}
+
+header .menu-data li a:hover {
+  color: #1F2020;
+}
+
+header .menu-data li .active-menu {
+  margin-left: 0;
+  color: #1F2020;
+  font-weight: 600;
+  position: relative;
+}
+
+header .menu-data li .active-menu::after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 9px;
+  background-color: #1F2020;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+header .mobile-menu {
+  background-color: #e5e6e9;
+  max-height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s linear;
+}
+
+header .mobile-menu.active {
+  visibility: visible;
+  pointer-events: all;
+  opacity: 1;
+  max-height: 650px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  margin: 15px 0px 0px 0px;
+}
+
+header .mobile-menu__main li a {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  color: #404040;
+  line-height: 24px;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+header .mobile-menu__main li a:hover {
+  color: #1F2020;
+}
+
+header .mobile-menu__main li .active-menu {
+  margin-left: 0;
+  color: #1F2020;
+  font-weight: 600;
+  position: relative;
+}
+
+header .mobile-menu__main li .active-menu::after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 20px;
+  background-color: #1F2020;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  header .menu {
+    width: 100%;
+    justify-content: space-between;
+  }
+  header .menu__logo {
+    width: 50%;
+  }
+  header .menu__bar {
+    width: max-content;
+    display: block;
+  }
+  header .menu-data, header .menu-button {
+    display: none;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* === For Large Device ( 1024px - 1200px) == */
 .btn {
   -moz-user-select: none;
   background: #000000 none repeat scroll 0 0;
@@ -314,9 +475,6 @@ abbr[title] {
   .blog-item__info h5 {
     line-height: 26px;
   }
-  .blog-item__info .blog_likes {
-    margin: 10px 0px;
-  }
   .blog-item__bottom {
     margin-top: 15px;
   }
@@ -485,91 +643,9 @@ p {
 }
 
 /* === For Large Device ( 1024px - 1200px) == */
-header {
-  height: calc(100vh - 88vh);
-  background-color: #FFFFFF;
-  padding: 20px 0px;
-}
-
-header .menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .menu__logo a {
-  color: #1F2020;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-header .menu__bar {
-  display: none;
-  cursor: pointer;
-}
-
-header .menu__bar span {
-  height: 3px;
-  width: 30px;
-  display: block;
-  background-color: #404040;
-}
-
-header .menu__bar span:nth-last-of-type(2) {
-  margin: 5px 0px;
-}
-
-header .menu__content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-header .menu__content .main-menu {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header .menu__content .main-menu li a {
-  font-weight: 400;
-  font-size: 16px;
-  color: #404040;
-  line-height: 24px;
-  margin-left: 36px;
-  transition: 0.3s;
-}
-
-header .menu__content .main-menu li a:hover {
-  color: #1F2020;
-}
-
-header .menu__content .main-menu li .active-menu {
-  margin-left: 0;
-  color: #1F2020;
-  font-weight: 600;
-  position: relative;
-}
-
-header .menu__content .main-menu li .active-menu::after {
-  position: absolute;
-  content: '';
-  bottom: -3px;
-  left: 0;
-  right: 0;
-  height: 3px;
-  width: 9px;
-  background-color: #1F2020;
-  border-radius: 5px;
-  margin: 0 auto;
-}
-
 .banner-area {
   padding-top: 60px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #1F2020;
   position: relative;
 }
@@ -606,6 +682,11 @@ header .menu__content .main-menu li .active-menu::after {
 .about-me {
   background-color: #FAFAFC;
   position: relative;
+  overflow: hidden;
+}
+
+.about-me__image {
+  position: relative;
 }
 
 .about-me__dots {
@@ -621,19 +702,73 @@ header .menu__content .main-menu li .active-menu::after {
   right: 0;
 }
 
-.about-me__links {
+.about-me .myself {
+  position: relative;
+}
+
+.about-me__overlay {
+  position: absolute;
+  left: -275px;
+  top: 425px;
   transform: rotate(90deg);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-me__overlay {
+    top: 320px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .about-me__overlay {
+    top: 320px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-me__overlay {
+    top: 425px;
+    left: -195px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-me__overlay {
+    top: 398px;
+    left: -275px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .about-me__overlay {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transform: rotate(0deg);
+    overflow: hidden;
+  }
+}
+
+.about-me__links {
   background-color: #FFE817;
-  text-align: center;
-  width: 450px;
+  display: flex;
+  width: 479px;
+  align-items: center;
+  justify-content: flex-end;
   padding: 25px 0px;
+  padding-right: 42px;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .about-me__links {
+    max-width: 100%;
+  }
 }
 
 .about-me__links a {
   color: #404040;
-  font-weight: 400;
-  line-height: 24px;
   font-size: 14px;
+  line-height: 22px;
 }
 
 .about-me__links a:nth-of-type(1) {
@@ -643,18 +778,17 @@ header .menu__content .main-menu li .active-menu::after {
 .about-me__links a:nth-of-type(1)::before {
   position: absolute;
   content: '';
-  top: 10px;
-  left: -152px;
   width: 140px;
   height: 1px;
   background-color: #1F2020;
+  bottom: 10px;
+  right: 82px;
 }
 
 .about-me__links span {
   color: #404040;
   font-size: 14px;
-  display: inline-block;
-  margin: 0px 14px;
+  margin: 0 14px;
 }
 
 .about-me__info h3 {
@@ -727,6 +861,12 @@ header .menu__content .main-menu li .active-menu::after {
   margin-bottom: 0 !important;
 }
 
+@media (min-width: 320px) and (max-width: 575px) {
+  .contact-info p {
+    max-width: 100%;
+  }
+}
+
 .contact-info__text {
   margin-top: 50px;
 }
@@ -785,9 +925,6 @@ header .menu__content .main-menu li .active-menu::after {
 
 /* === For Small Device ( 0px - 767px) == */
 @media (max-width: 767px) {
-  header {
-    display: none;
-  }
   .banner-area {
     padding-top: 40px;
   }
@@ -823,6 +960,15 @@ header .menu__content .main-menu li .active-menu::after {
   .testimonials .testimonial-left {
     margin-bottom: 30px;
   }
+}
+
+@media (max-width: 767px) and (min-width: 320px) and (max-width: 575px) {
+  .testimonials .testimonial-left {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
   .testimonials .testimonial-left__heading {
     margin-bottom: 12px;
   }
@@ -920,11 +1066,8 @@ header .menu__content .main-menu li .active-menu::after {
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 @media (min-width: 768px) and (max-width: 1023px) {
-  header {
-    display: none;
-  }
   .banner-area {
-    padding-top: 40px;
+    padding: 40px 0px;
   }
   .banner-area__heading {
     margin-bottom: 20px;

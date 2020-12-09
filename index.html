@@ -29,19 +29,29 @@
                             <span></span>
                             <span></span>
                         </div>
-                        <div class="menu__content">
-                            <ul class="main-menu">
-                                <li><a href="index.html" class="active-menu">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Work</a></li>
-                                <li><a href="#">Blog</a></li>
-                            </ul>
-                            <div class="menu-button">
-                                <a href="#" class="btn">Hire Me</a>
-                            </div>
+                        <ul class="menu-data">
+                            <li><a href="index.html" class="active-menu">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                        <div class="menu-button">
+                            <a href="#" class="btn">Hire Me</a>
                         </div>
                     </nav>
+                    <div class="mobile-menu">
+                        <ul class="mobile-menu__main">
+                            <li><a href="index.html" class="active-menu">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                        <div class="mobile-menu__button">
+                            <a href="#" class="btn">Hire Me</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,7 +62,7 @@
     <section class="banner-area">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-2 order-lg-0">
                     <div class="banner-area__heading">
                         <h1 class="text-white">
                             UI/UX and
@@ -66,7 +76,7 @@
                     </div>
                     <button class="btn btn_yellow">View Project</button>
                 </div>
-                <div class="col-lg-6 text-md-center mt-5 mt-md-0">
+                <div class="col-lg-6 order-1  order-lg-0 text-md-center mt-5 mt-md-0">
                     <img src="assets/images/Banner/hero_image.png" alt="Person" class="img-fluid overflow-hidden">
                     <div class="dots-image">
                         <img src="assets/images/Banner/dots.png" alt="Dots" class="img-fluid">
@@ -83,13 +93,22 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-me__image">
-                        <!-- <div class="about-me__links">
-                            <a href="#">Facebook</a> <span>/</span>
-                            <a href="#">Twitter</a>  <span>/</span>
-                            <a href="#">Linkedin</a>
-                        </div> -->
-                        <img src="assets/images/About/About image.jpg" alt="Kevin" class="img-fluid">
+                        <div class="about-me_myself">
+                           <div>
+                            <img src="assets/images/About/About image.jpg" alt="Kevin" class="img-fluid">
+                           </div>
+
+                            <div class="about-me__overlay">
+                                <div class="about-me__links">
+                                    <a href="#">Facebook</a> <span>/</span>
+                                    <a href="#">Twitter</a>  <span>/</span>
+                                    <a href="#">Linkedin</a>
+                                </div>
+                            </div>
+                        </div>
+                      
                     </div>
+                   
                 </div>
                 <div class="col-lg-6">
                     <div class="about-me__info">
@@ -465,7 +484,7 @@
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="assets/js/jquery.ripples-min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

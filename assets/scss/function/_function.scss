@@ -15,6 +15,11 @@
 		@content;
 	}
 }
+@mixin min {
+	@media(min-width: 768px){
+		@content;
+	}
+}
 @mixin large {
 	@media (min-width: 1024px) and (max-width: 1200px) {
 		@content;
@@ -30,6 +35,11 @@
 }
 /* === For Medium Device ( 768px - 1023px) == */
 @include medium {
+}
+/* === start fromt   ( 768px - ) == */
+
+@include min{
+
 }
 /* === For Large Device ( 1024px - 1200px) == */
 @include large {
