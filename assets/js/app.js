@@ -10,3 +10,13 @@ toggleMenu.addEventListener('click', (e) => {
     e.preventDefault(); // prevent default behaviour
 });
 // Mobile Menu Ends Here
+
+// Testimonial Slider
+var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    autoplay: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });

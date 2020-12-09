@@ -26,20 +26,6 @@
 
     &__dots {
         margin-bottom: 40px;
-
-        span {
-            display: inline-block;
-            margin-right: 8px;
-            height: 8px;
-            width: 8px;
-            border: 1px solid #1F2020;
-            background-color: transparent;
-            border-radius: 2px;
-
-            &.active_dots {
-                background-color: #1F2020;
-            }
-        }
     }
 
     &__buttons {
@@ -47,4 +33,34 @@
             margin-right: 25px;
         }
     }
+}
+
+// Swiper CSS
+
+.swiper-wrapper {
+    position: relative;
+}
+
+.swiper-slide {
+    margin-bottom: 50px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    left: 0px;
+    bottom: 90px !important;
+    display: flex;
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 1px solid #1F2020;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #1F2020;
 }

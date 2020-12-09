@@ -19,11 +19,16 @@
             display: none;
         }
 
+        .swiper-pagination {
+            justify-content: center;
+        }
+
         .testimonial-left {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
 
             &__heading {
                 margin-bottom: 12px;
+                text-align: center;
             }
 
             &__text {
@@ -43,6 +48,10 @@
             &__buttons {
                 text-align: center;
             }
+        }
+
+        img {
+            margin-top: 30px;
         }
     }
 }
@@ -76,6 +85,10 @@
             &__buttons {
                 text-align: left;
             }
+        }
+
+        img {
+            margin-top: 30px;
         }
     }
 }
