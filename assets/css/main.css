@@ -655,15 +655,6 @@ p {
 
 /* === For Small Device ( 0px - 767px) == */
 @media (max-width: 767px) {
-  .my-portfolio {
-    padding: 0;
-  }
-  .my-portfolio .column {
-    padding: 0px 8px;
-  }
-  .my-portfolio .column img {
-    margin-bottom: 16px;
-  }
   .testimonials-dots {
     display: none;
   }
@@ -732,9 +723,6 @@ p {
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .my-portfolio {
-    padding: 0;
-  }
   .testimonials .testimonial-left {
     margin-bottom: 30px;
   }
@@ -1082,8 +1070,26 @@ p {
 }
 
 /* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .my-portfolio {
+    padding: 0;
+  }
+  .my-portfolio .column {
+    padding: 0px 8px;
+  }
+  .my-portfolio .column img {
+    margin-bottom: 16px;
+  }
+}
+
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .my-portfolio {
+    padding: 0;
+  }
+}
+
 /* === start fromt   ( 768px - ) == */
 /* === For Large Device ( 1024px - 1200px) == */
 .contact-info p {

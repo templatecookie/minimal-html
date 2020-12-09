@@ -33,17 +33,31 @@
 // Responsive
 /* === For Small Device ( 0px - 767px) == */
 @include small {
+    .my-portfolio {
+        padding: 0;
+
+        .column {
+            padding: 0px 8px;
+
+            img {
+                margin-bottom: 16px;
+            }
+        }
+    }
 }
+
 /* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {
-}
+@include ex_small {}
+
 /* === For Medium Device ( 768px - 1023px) == */
 @include medium {
+    .my-portfolio {
+        padding: 0;
+    }
 }
-/* === start fromt   ( 768px - ) == */
-@include min{
 
-}
+/* === start fromt   ( 768px - ) == */
+@include min {}
+
 /* === For Large Device ( 1024px - 1200px) == */
-@include large {
-}
+@include large {}

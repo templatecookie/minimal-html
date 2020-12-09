@@ -17,17 +17,7 @@
 @include small {
     
 
-    .my-portfolio {
-        padding: 0;
-
-        .column {
-            padding: 0px 8px;
-
-            img {
-                margin-bottom: 16px;
-            }
-        }
-    }
+    
 
     .testimonials {
         &-dots {
@@ -126,9 +116,7 @@
 @include medium {
 
 
-    .my-portfolio {
-        padding: 0;
-    }
+
 
     .testimonials {
         .testimonial-left {
