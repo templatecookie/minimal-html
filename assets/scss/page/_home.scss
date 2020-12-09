@@ -116,47 +116,7 @@
         }
     }
 
-    .about-me {
-        padding-bottom: 25px;
-        z-index: 3;
 
-        &__image {
-            margin-bottom: 30px;
-        }
-
-        &__info {
-            text-align: center;
-
-            h3 {
-                margin-bottom: 20px;
-            }
-
-            p {
-                text-align: left;
-                line-height: 22px;
-
-                &:nth-last-of-type(1) {
-                    margin-bottom: 20px;
-                    margin-top: -10px;
-                }
-            }
-
-            button {
-                &:nth-last-of-type(1) {
-                    margin-left: 10px;
-                }
-            }
-        }
-
-        &__dots {
-            display: none;
-        }
-
-        &__triangle {
-            z-index: -3;
-            filter: grayscale(50%);
-        }
-    }
 }
 
 /* === For Extra small Device ( 320px - 575px) == */
@@ -205,55 +165,6 @@
     .contact-info__text h6 {
         font-size: 30px;
     }
-
-    .about-me {
-        padding-bottom: 25px;
-        z-index: 3;
-
-        &__image {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        &__info {
-            text-align: center;
-
-            h3 {
-                font-size: 24px;
-                margin-bottom: 20px;
-                max-width: 100%;
-                text-align: left;
-            }
-
-            p {
-                font-size: 14px;
-                text-align: justify;
-                line-height: 26px;
-                max-width: 90%;
-
-                &:nth-last-of-type(1) {
-                    margin-bottom: 30px;
-                }
-            }
-
-            button {
-                &:nth-last-of-type(1) {
-                    margin-left: 15px;
-                }
-            }
-        }
-
-        &__dots {
-            bottom: 105px;
-            right: 10px;
-            width: 80px;
-        }
-
-        &__triangle {
-            z-index: -3;
-            filter: grayscale(20%);
-        }
-    }
 }
 
 /* === For Large Device ( 1024px - 1200px) == */
@@ -261,46 +172,6 @@
     .contact {
         padding-bottom: 50px;
     }
-
-    .about-me {
-        z-index: 3;
-
-        &__dots {
-            bottom: 0px;
-            right: 5px;
-            width: 90px;
-        }
-
-        &__triangle {
-            z-index: -3;
-            filter: grayscale(10%);
-        }
-    }
 }
 
-// For Laptop
-@media (min-width: 1201px) and (max-width: 1439px) {
-    .about-me {
-        z-index: 3;
 
-        &__dots {
-            bottom: 65px;
-            right: 25px;
-            width: 90px;
-        }
-
-        &__triangle {
-            z-index: -3;
-            filter: grayscale(10%);
-        }
-    }
-}
-
-//  For About Section
-@media (min-width: 992px) and (max-width: 1023px) {
-    .about-me__dots {
-        width: 0px;
-        bottom: 0px;
-        right: 5px;
-    }
-}

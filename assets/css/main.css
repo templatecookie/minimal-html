@@ -727,43 +727,6 @@ p {
     height: 110px;
     margin-bottom: 25px;
   }
-  .about-me {
-    padding-bottom: 25px;
-    z-index: 3;
-  }
-  .about-me__image {
-    margin-bottom: 30px;
-  }
-  .about-me__info {
-    text-align: center;
-  }
-  .about-me__info h3 {
-    margin-bottom: 20px;
-  }
-  .about-me__info p {
-    text-align: left;
-    line-height: 22px;
-  }
-  .about-me__info p:nth-last-of-type(1) {
-    margin-bottom: 20px;
-    margin-top: -10px;
-  }
-  .about-me__info button:nth-last-of-type(1),
-  .about-me__info .btn:nth-last-of-type(1):hover,
-  .about-me__info input:nth-last-of-type(1):hover,
-  .about-me__info .btn:nth-last-of-type(1):active,
-  .about-me__info input:nth-last-of-type(1):active,
-  .about-me__info .btn:nth-last-of-type(1):focus,
-  .about-me__info input:nth-last-of-type(1):focus {
-    margin-left: 10px;
-  }
-  .about-me__dots {
-    display: none;
-  }
-  .about-me__triangle {
-    z-index: -3;
-    filter: grayscale(50%);
-  }
 }
 
 /* === For Extra small Device ( 320px - 575px) == */
@@ -798,91 +761,12 @@ p {
   .contact-info__text h6 {
     font-size: 30px;
   }
-  .about-me {
-    padding-bottom: 25px;
-    z-index: 3;
-  }
-  .about-me__image {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .about-me__info {
-    text-align: center;
-  }
-  .about-me__info h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    text-align: left;
-  }
-  .about-me__info p {
-    font-size: 14px;
-    text-align: justify;
-    line-height: 26px;
-    max-width: 90%;
-  }
-  .about-me__info p:nth-last-of-type(1) {
-    margin-bottom: 30px;
-  }
-  .about-me__info button:nth-last-of-type(1),
-  .about-me__info .btn:nth-last-of-type(1):hover,
-  .about-me__info input:nth-last-of-type(1):hover,
-  .about-me__info .btn:nth-last-of-type(1):active,
-  .about-me__info input:nth-last-of-type(1):active,
-  .about-me__info .btn:nth-last-of-type(1):focus,
-  .about-me__info input:nth-last-of-type(1):focus {
-    margin-left: 15px;
-  }
-  .about-me__dots {
-    bottom: 105px;
-    right: 10px;
-    width: 80px;
-  }
-  .about-me__triangle {
-    z-index: -3;
-    filter: grayscale(20%);
-  }
 }
 
 /* === For Large Device ( 1024px - 1200px) == */
 @media (min-width: 1024px) and (max-width: 1200px) {
   .contact {
     padding-bottom: 50px;
-  }
-  .about-me {
-    z-index: 3;
-  }
-  .about-me__dots {
-    bottom: 0px;
-    right: 5px;
-    width: 90px;
-  }
-  .about-me__triangle {
-    z-index: -3;
-    filter: grayscale(10%);
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1439px) {
-  .about-me {
-    z-index: 3;
-  }
-  .about-me__dots {
-    bottom: 65px;
-    right: 25px;
-    width: 90px;
-  }
-  .about-me__triangle {
-    z-index: -3;
-    filter: grayscale(10%);
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1023px) {
-  .about-me__dots {
-    width: 0px;
-    bottom: 0px;
-    right: 5px;
   }
 }
 
@@ -1031,10 +915,135 @@ p {
 }
 
 /* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .about-me {
+    padding-bottom: 25px;
+    z-index: 3;
+  }
+  .about-me__image {
+    margin-bottom: 30px;
+  }
+  .about-me__info {
+    text-align: center;
+  }
+  .about-me__info h3 {
+    margin-bottom: 20px;
+  }
+  .about-me__info p {
+    text-align: left;
+    line-height: 22px;
+  }
+  .about-me__info p:nth-last-of-type(1) {
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+  .about-me__info button:nth-last-of-type(1),
+  .about-me__info .btn:nth-last-of-type(1):hover,
+  .about-me__info input:nth-last-of-type(1):hover,
+  .about-me__info .btn:nth-last-of-type(1):active,
+  .about-me__info input:nth-last-of-type(1):active,
+  .about-me__info .btn:nth-last-of-type(1):focus,
+  .about-me__info input:nth-last-of-type(1):focus {
+    margin-left: 10px;
+  }
+  .about-me__dots {
+    display: none;
+  }
+  .about-me__triangle {
+    z-index: -3;
+    filter: grayscale(50%);
+  }
+}
+
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-me {
+    padding-bottom: 25px;
+    z-index: 3;
+  }
+  .about-me__image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .about-me__info {
+    text-align: center;
+  }
+  .about-me__info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    text-align: left;
+  }
+  .about-me__info p {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 26px;
+    max-width: 90%;
+  }
+  .about-me__info p:nth-last-of-type(1) {
+    margin-bottom: 30px;
+  }
+  .about-me__info button:nth-last-of-type(1),
+  .about-me__info .btn:nth-last-of-type(1):hover,
+  .about-me__info input:nth-last-of-type(1):hover,
+  .about-me__info .btn:nth-last-of-type(1):active,
+  .about-me__info input:nth-last-of-type(1):active,
+  .about-me__info .btn:nth-last-of-type(1):focus,
+  .about-me__info input:nth-last-of-type(1):focus {
+    margin-left: 15px;
+  }
+  .about-me__dots {
+    bottom: 105px;
+    right: 10px;
+    width: 80px;
+  }
+  .about-me__triangle {
+    z-index: -3;
+    filter: grayscale(20%);
+  }
+}
+
 /* === start fromt   ( 768px - ) == */
 /* === For Large Device ( 1024px - 1200px) == */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .about-me {
+    z-index: 3;
+  }
+  .about-me__dots {
+    bottom: 0px;
+    right: 5px;
+    width: 90px;
+  }
+  .about-me__triangle {
+    z-index: -3;
+    filter: grayscale(10%);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  .about-me__dots {
+    width: 0px;
+    bottom: 0px;
+    right: 5px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1439px) {
+  .about-me {
+    z-index: 3;
+  }
+  .about-me__dots {
+    bottom: 65px;
+    right: 25px;
+    width: 90px;
+  }
+  .about-me__triangle {
+    z-index: -3;
+    filter: grayscale(10%);
+  }
+}
+
 .testimonials {
   position: relative;
 }
