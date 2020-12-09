@@ -655,30 +655,6 @@ p {
 
 /* === For Small Device ( 0px - 767px) == */
 @media (max-width: 767px) {
-  .banner-area {
-    padding-top: 40px;
-    height: auto;
-  }
-  .banner-area img {
-    display: none;
-  }
-  .banner-area__heading {
-    margin-bottom: 20px;
-  }
-  .banner-area__heading h1 {
-    font-size: 30px;
-    line-height: 38px;
-  }
-  .banner-area__text {
-    margin-bottom: 20px;
-  }
-  .banner-area__text p {
-    line-height: 26px;
-    max-width: 100%;
-  }
-  .banner-area .dots-image {
-    display: none;
-  }
   .my-portfolio {
     padding: 0;
   }
@@ -793,24 +769,6 @@ p {
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .banner-area {
-    padding-top: 90px;
-    height: auto;
-  }
-  .banner-area__heading {
-    margin-bottom: 20px;
-  }
-  .banner-area__heading h1 {
-    font-size: 45px;
-    line-height: 53px;
-  }
-  .banner-area__text {
-    margin-bottom: 20px;
-  }
-  .banner-area__text p {
-    line-height: 26px;
-    max-width: 100%;
-  }
   .my-portfolio {
     padding: 0;
   }
@@ -888,9 +846,6 @@ p {
 
 /* === For Large Device ( 1024px - 1200px) == */
 @media (min-width: 1024px) and (max-width: 1200px) {
-  .banner-area {
-    height: auto;
-  }
   .contact {
     padding-bottom: 50px;
   }
@@ -909,9 +864,6 @@ p {
 }
 
 @media (min-width: 1201px) and (max-width: 1439px) {
-  .banner-area {
-    height: auto;
-  }
   .about-me {
     z-index: 3;
   }
@@ -971,10 +923,70 @@ p {
 }
 
 /* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .banner-area {
+    padding-top: 40px;
+    height: auto;
+  }
+  .banner-area img {
+    display: none;
+  }
+  .banner-area__heading {
+    margin-bottom: 20px;
+  }
+  .banner-area__heading h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .banner-area__text {
+    margin-bottom: 20px;
+  }
+  .banner-area__text p {
+    line-height: 26px;
+    max-width: 100%;
+  }
+  .banner-area .dots-image {
+    display: none;
+  }
+}
+
 /* === For Extra small Device ( 320px - 575px) == */
 /* === For Medium Device ( 768px - 1023px) == */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner-area {
+    padding-top: 90px;
+    height: auto;
+  }
+  .banner-area__heading {
+    margin-bottom: 20px;
+  }
+  .banner-area__heading h1 {
+    font-size: 45px;
+    line-height: 53px;
+  }
+  .banner-area__text {
+    margin-bottom: 20px;
+  }
+  .banner-area__text p {
+    line-height: 26px;
+    max-width: 100%;
+  }
+}
+
 /* === start fromt   ( 768px - ) == */
 /* === For Large Device ( 1024px - 1200px) == */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .banner-area {
+    height: auto;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1439px) {
+  .banner-area {
+    height: auto;
+  }
+}
+
 .about-me {
   background-color: #FAFAFC;
   position: relative;

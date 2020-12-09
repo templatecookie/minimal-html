@@ -15,36 +15,7 @@
 // Responsive
 /* === For Small Device ( 0px - 767px) == */
 @include small {
-    .banner-area {
-        padding-top: 40px;
-        height: auto;
-
-        img {
-            display: none;
-        }
-
-        &__heading {
-            margin-bottom: 20px;
-
-            h1 {
-                font-size: 30px;
-                line-height: 38px
-            }
-        }
-
-        &__text {
-            margin-bottom: 20px;
-
-            p {
-                line-height: 26px;
-                max-width: 100%;
-            }
-        }
-
-        .dots-image {
-            display: none;
-        }
-    }
+    
 
     .my-portfolio {
         padding: 0;
@@ -193,28 +164,7 @@
 
 /* === For Medium Device ( 768px - 1023px) == */
 @include medium {
-    .banner-area {
-        padding-top: 90px;
-        height: auto;
 
-        &__heading {
-            margin-bottom: 20px;
-
-            h1 {
-                font-size: 45px;
-                line-height: 53px
-            }
-        }
-
-        &__text {
-            margin-bottom: 20px;
-
-            p {
-                line-height: 26px;
-                max-width: 100%;
-            }
-        }
-    }
 
     .my-portfolio {
         padding: 0;
@@ -308,10 +258,6 @@
 
 /* === For Large Device ( 1024px - 1200px) == */
 @include large {
-    .banner-area {
-        height: auto;
-    }
-
     .contact {
         padding-bottom: 50px;
     }
@@ -334,10 +280,6 @@
 
 // For Laptop
 @media (min-width: 1201px) and (max-width: 1439px) {
-    .banner-area {
-        height: auto;
-    }
-
     .about-me {
         z-index: 3;
 

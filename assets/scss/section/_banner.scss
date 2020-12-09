@@ -40,17 +40,80 @@
 // Responsive
 /* === For Small Device ( 0px - 767px) == */
 @include small {
+    .banner-area {
+        padding-top: 40px;
+        height: auto;
+
+        img {
+            display: none;
+        }
+
+        &__heading {
+            margin-bottom: 20px;
+
+            h1 {
+                font-size: 30px;
+                line-height: 38px
+            }
+        }
+
+        &__text {
+            margin-bottom: 20px;
+
+            p {
+                line-height: 26px;
+                max-width: 100%;
+            }
+        }
+
+        .dots-image {
+            display: none;
+        }
+    }
 }
+
 /* === For Extra small Device ( 320px - 575px) == */
-@include ex_small {
-}
+@include ex_small {}
+
 /* === For Medium Device ( 768px - 1023px) == */
 @include medium {
-}
-/* === start fromt   ( 768px - ) == */
-@include min{
+    .banner-area {
+        padding-top: 90px;
+        height: auto;
 
+        &__heading {
+            margin-bottom: 20px;
+
+            h1 {
+                font-size: 45px;
+                line-height: 53px
+            }
+        }
+
+        &__text {
+            margin-bottom: 20px;
+
+            p {
+                line-height: 26px;
+                max-width: 100%;
+            }
+        }
+    }
 }
+
+/* === start fromt   ( 768px - ) == */
+@include min {}
+
 /* === For Large Device ( 1024px - 1200px) == */
 @include large {
+    .banner-area {
+        height: auto;
+    }
+}
+
+// For Laptop
+@media (min-width: 1201px) and (max-width: 1439px) {
+    .banner-area {
+        height: auto;
+    }
 }
