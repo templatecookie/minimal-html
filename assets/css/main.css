@@ -653,69 +653,6 @@ p {
   margin-right: 4px;
 }
 
-/* === For Small Device ( 0px - 767px) == */
-@media (max-width: 767px) {
-  .contact-info {
-    text-align: center;
-  }
-  .contact-info p {
-    font-size: 14px;
-    line-height: 22px;
-    max-width: 100%;
-  }
-  .contact-info__text {
-    margin-top: 25px;
-  }
-  .contact-info__text h6 {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 3px;
-  }
-  .contact-info__links {
-    margin-top: 25px;
-    margin-bottom: 30px;
-  }
-  .contact-info__links h6 {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 10px;
-  }
-  .contact {
-    padding-bottom: 35px;
-  }
-  .contact-form {
-    order: 2;
-    text-align: center;
-  }
-  .contact-form form input {
-    height: 50px;
-    margin-bottom: 25px;
-  }
-  .contact-form form textarea {
-    height: 110px;
-    margin-bottom: 25px;
-  }
-}
-
-/* === For Extra small Device ( 320px - 575px) == */
-/* === For Medium Device ( 768px - 1023px) == */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .contact {
-    padding-bottom: 50px;
-  }
-  .contact-info__links h6,
-  .contact-info__text h6 {
-    font-size: 30px;
-  }
-}
-
-/* === For Large Device ( 1024px - 1200px) == */
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .contact {
-    padding-bottom: 50px;
-  }
-}
-
 .banner-area {
   padding-top: 60px;
   height: 100vh;
@@ -1155,5 +1092,68 @@ p {
 .contact-info__links a:hover svg path {
   transition: 0.3s all linear;
   fill: #CC58CB !important;
+}
+
+/* === For Small Device ( 0px - 767px) == */
+@media (max-width: 767px) {
+  .contact-info {
+    text-align: center;
+  }
+  .contact-info p {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 100%;
+  }
+  .contact-info__text {
+    margin-top: 25px;
+  }
+  .contact-info__text h6 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 3px;
+  }
+  .contact-info__links {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  .contact-info__links h6 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  .contact {
+    padding-bottom: 35px;
+  }
+  .contact-form {
+    order: 2;
+    text-align: center;
+  }
+  .contact-form form input {
+    height: 50px;
+    margin-bottom: 25px;
+  }
+  .contact-form form textarea {
+    height: 110px;
+    margin-bottom: 25px;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact {
+    padding-bottom: 50px;
+  }
+  .contact-info__links h6,
+  .contact-info__text h6 {
+    font-size: 30px;
+  }
+}
+
+/* === For Large Device ( 1024px - 1200px) == */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .contact {
+    padding-bottom: 50px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
