@@ -1,27 +1,27 @@
 // fonts will inclue here
 
 // utitlity
-@import './utility/variable';
-@import './function/function';
-@import './utility/reset';
+@import 'utility/variable';
+@import 'function/function';
+@import 'utility/reset';
 
 // component
-@import './component/header';
-@import './component/button';
-@import './component/servicesitem';
-@import './component/testimonial';
-@import './component/blog';
-@import './component/inputs';
+@import 'component/header';
+@import 'component/button';
+@import 'component/servicesitem';
+@import 'component/testimonial';
+@import 'component/blog';
+@import 'component/inputs';
 
 // reuse
-@import './reuse/reuse';
+@import 'reuse/reuse';
 
 // pages
-@import './page/home';
+@import 'page/home';
 
 // section
-@import './section/banner';
-@import './section/about';
-@import './section/testimonial';
-@import './section/portfolio';
-@import './section/contact';
+@import 'section/banner';
+@import 'section/about';
+@import 'section/testimonial';
+@import 'section/portfolio';
+@import 'section/contact';
