@@ -233,9 +233,15 @@ header {
       background: #000000;
       color: #FFFFFF;
       border: 1px solid #000000; }
-  .btn.btn_prev i {
+  .btn.btn_prev i, .btn.btn_next i {
     font-size: 16px;
     margin-left: 5px; }
+  .btn.btn_prev.swiper-button-disabled, .btn.btn_next.swiper-button-disabled {
+    background-color: #4d4d4d;
+    color: white;
+    border-color: #4d4d4d; }
+    .btn.btn_prev.swiper-button-disabled:hover, .btn.btn_next.swiper-button-disabled:hover {
+      cursor: default; }
   .btn.btn_next i {
     font-size: 16px;
     margin-left: 5px; }
