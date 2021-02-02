@@ -345,11 +345,12 @@ header {
   margin: 0px 50px;
   background-color: #ffffff;
   padding: 30px; }
-  .blog-item__info h5 {
+  .blog-item__info a.title {
     max-width: 370px;
     line-height: 30px;
-    color: #1F2020; }
-  .blog-item__info span {
+    color: #1F2020;
+    font-size: 24px; }
+  .blog-item__info a.category {
     font-size: 13px;
     font-weight: 400;
     color: #404040; }
