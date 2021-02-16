@@ -4,10 +4,35 @@
         flex: 100%;
         max-width: none;
     }
+    .contact-info{
+        text-align: left !important;
+        p{
+            max-width: 70%;
+        }
+    }
 }
 
 // Small devices 420px - 574px
 @media only screen and (min-width: 420px) and (max-width: 574px) {
+    .my-portfolio .column{
+        flex:33.33%;
+        max-width: none;
+    }
+    .contact-info{
+        text-align: left !important;
+        p{
+            max-width: 70%;
+        }
+    }
+    .about-me__info {
+        h3{
+            max-width: 100%;
+            text-align: left;
+        }
+        .btn{
+            text-align: left;
+        }
+    }
     
 }
 

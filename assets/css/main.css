@@ -891,7 +891,7 @@ p {
     z-index: 3;
   }
   .about-me__image {
-    margin-bottom: 30px;
+    margin-bottom: 0px !important;
   }
   .about-me__info {
     text-align: center;
@@ -1043,7 +1043,7 @@ p {
   }
   .testimonials .testimonial-left__heading {
     margin-bottom: 12px;
-    text-align: center;
+    text-align: left !important;
   }
   .testimonials .testimonial-left__text {
     margin-bottom: 20px;
@@ -1276,6 +1276,34 @@ p {
         -ms-flex: 100%;
             flex: 100%;
     max-width: none;
+  }
+  .contact-info {
+    text-align: left !important;
+  }
+  .contact-info p {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+  .my-portfolio .column {
+    -webkit-box-flex: 33.33%;
+        -ms-flex: 33.33%;
+            flex: 33.33%;
+    max-width: none;
+  }
+  .contact-info {
+    text-align: left !important;
+  }
+  .contact-info p {
+    max-width: 70%;
+  }
+  .about-me__info h3 {
+    max-width: 100%;
+    text-align: left;
+  }
+  .about-me__info .btn {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=main.css.map */

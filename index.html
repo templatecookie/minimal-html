@@ -94,17 +94,12 @@
     <section class="section_padding about-me">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-2 order-md-2 order-lg-1 text-center text-lg-left mb-0">
                     <div class="about-me__image">
-                        <!-- <div class="about-me__links">
-                            <a href="#">Facebook</a> <span>/</span>
-                            <a href="#">Twitter</a>  <span>/</span>
-                            <a href="#">Linkedin</a>
-                        </div> -->
                         <img src="assets/images/About/me.jpg" alt="Kevin" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-1 order-md-1 order-lg-2 mb-5 mb-md-0 mb-lg-0">
                     <div class="about-me__info">
                         <h3>
                             Hello, I’m Kevin Gilbert. A ui/ux and graphics Dsigner.
@@ -121,8 +116,11 @@
                             Aliquam fermentum, massa eget volutpat vehicula, velit dolor mattis turpis, in sollicitudin
                             lectus ligula quis ex.
                         </p>
-                        <button class="btn">Hire Me</button>
-                        <button class="btn btn_white">Download CV</button>
+                        <div class="d-flex">
+                            <button class="btn">Hire Me</button>
+                            <button class="btn btn_white">Download CV</button>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -361,7 +359,7 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="col-lg-6 offset-lg-1">
+                <div class="col-lg-6 offset-lg-1 d-none d-md-block d-lg-block">
                     <img src="assets/images/Testimonial/clients.png" alt="clients" class="img-fluid">
                 </div>
             </div>
@@ -526,7 +524,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-5 offset-lg-1 col-md-6">
+                <div class="col-lg-5 offset-lg-1 col-md-6 order-2">
                     <div class="contact-info">
                         <p>Drop me a line for inquiries, collaborations, speaking engagements, or just to say hello.</p>
                         <div class="contact-info__text">
@@ -588,7 +586,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6">
+                <div class="col-lg-5 col-md-6 order-1 mb-5 mb-md-0 mb-lg-0">
                     <div class="contact-form">
                         <form action="#">
                             <input type="text" name="" id="name" placeholder="Your name" class="form-control">
