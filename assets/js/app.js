@@ -19,4 +19,8 @@ var swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       clickable: true,
     },
+    navigation: {
+        nextEl: '.testimonial-left__buttons .btn_prev',
+        prevEl: '.testimonial-left__buttons .btn_next',
+    },
   });

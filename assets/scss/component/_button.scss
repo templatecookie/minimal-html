@@ -48,12 +48,24 @@
 			color: #FFFFFF;
 			border: 1px solid #000000;
 		}
-	}
+    }
+    &.btn_prev, &.btn_next {
+        i {
+            font-size: 16px;
+            margin-left: 5px;
+        }
+        &.swiper-button-disabled {
+            background-color: lighten(#000000, 30%);
+            color: white;
+            border-color: lighten(#000000, 30%);
+            &:hover {
+                cursor: default;
+            }
+        }
+    }
 
 	&.btn_prev {
 		i {
-			font-size: 16px;
-			margin-left: 5px;
 		}
 	}
 
