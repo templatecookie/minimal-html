@@ -1,0 +1,96 @@
+// extra Small devices 420px
+@media (max-width: 420px) {
+    .my-portfolio .column{
+        flex: 100%;
+        max-width: none;
+    }
+    .contact-info{
+        text-align: left !important;
+        p{
+            max-width: 70%;
+        }
+    }
+}
+
+// Small devices 420px - 574px
+@media only screen and (min-width: 420px) and (max-width: 574px) {
+    .my-portfolio .column{
+        flex:33.33%;
+        max-width: none;
+    }
+    .contact-info{
+        text-align: left !important;
+        p{
+            max-width: 70%;
+        }
+    }
+    .about-me__info {
+        h3{
+            max-width: 100%;
+            text-align: left;
+        }
+        .btn{
+            text-align: left;
+        }
+    }
+    
+}
+
+// Small devices 575px - 767px
+@media (min-width: 575px) and (max-width: 767px) {
+    .about-me__info {
+        h3{
+            max-width: 100%;
+            text-align: left;
+        }
+    }
+    .about-me__image{
+        margin-bottom: 0 !important;
+    }
+    .services-item__text{
+        text-align: left;
+    }
+    .testimonials .testimonial-left__heading{
+        text-align: left !important;
+    }
+    .contact-info{
+        text-align: left !important;
+        p{
+            max-width: 80%;
+        }
+    }
+}
+
+// Medium devices 768px - 991px
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-me__image{
+        margin-bottom: 0 !important;
+    }
+    .contact-info{
+        p{
+            max-width: 85%;
+        }
+    }
+    .about-me__image{
+        text-align: left;
+    }
+    .img_sm{
+        max-width: 50% !important;
+    }
+}
+// Large devices 992px - 1200px
+@media (min-width: 992px) and (max-width: 1200px) {
+    .section_heading{
+        margin-bottom: 50px;
+        font-size: 60px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    .services-item__text{
+        text-align: left;
+    }
+    .my-portfolio{
+        padding: 0px 0px;
+    }
+}

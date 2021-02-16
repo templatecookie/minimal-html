@@ -20,8 +20,11 @@
 @import 'page/home';
 
 // section
-@import 'section/banner';
-@import 'section/about';
-@import 'section/testimonial';
-@import 'section/portfolio';
-@import 'section/contact';
+@import './section/banner';
+@import './section/about';
+@import './section/testimonial';
+@import './section/portfolio';
+@import './section/contact';
+
+// Responsive
+@import 'responsive'
