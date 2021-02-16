@@ -1271,11 +1271,8 @@ p {
 }
 
 @media (max-width: 420px) {
-  .my-portfolio .column {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: none;
+  .banner-area {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
