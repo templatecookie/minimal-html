@@ -891,7 +891,7 @@ p {
     z-index: 3;
   }
   .about-me__image {
-    margin-bottom: 0px !important;
+    margin-bottom: 30px;
   }
   .about-me__info {
     text-align: center;
@@ -1043,7 +1043,7 @@ p {
   }
   .testimonials .testimonial-left__heading {
     margin-bottom: 12px;
-    text-align: left !important;
+    text-align: center;
   }
   .testimonials .testimonial-left__text {
     margin-bottom: 20px;
@@ -1304,6 +1304,59 @@ p {
   }
   .about-me__info .btn {
     text-align: left;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .about-me__info h3 {
+    max-width: 100%;
+    text-align: left;
+  }
+  .about-me__image {
+    margin-bottom: 0 !important;
+  }
+  .services-item__text {
+    text-align: left;
+  }
+  .testimonials .testimonial-left__heading {
+    text-align: left !important;
+  }
+  .contact-info {
+    text-align: left !important;
+  }
+  .contact-info p {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-me__image {
+    margin-bottom: 0 !important;
+  }
+  .contact-info p {
+    max-width: 85%;
+  }
+  .about-me__image {
+    text-align: left;
+  }
+  .img_sm {
+    max-width: 50% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .section_heading {
+    margin-bottom: 50px;
+    font-size: 60px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  .services-item__text {
+    text-align: left;
+  }
+  .my-portfolio {
+    padding: 0px 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
