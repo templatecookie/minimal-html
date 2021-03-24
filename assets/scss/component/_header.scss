@@ -164,7 +164,18 @@ header {
                 display: none;
             }
         }
-
+        .mobile-menu__main li a {
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 5px 0;
+            &.active-menu::after {
+                width: calc(100% - 20px);
+                left: -20px;
+            }
+        }
+        .mobile-menu__button {
+            margin-top: 10px;
+        }
     }
 }
 

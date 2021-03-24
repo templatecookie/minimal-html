@@ -262,6 +262,18 @@ header .mobile-menu__main li .active-menu::after {
   header .menu-data, header .menu-button {
     display: none;
   }
+  header .mobile-menu__main li a {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px 0;
+  }
+  header .mobile-menu__main li a.active-menu::after {
+    width: calc(100% - 20px);
+    left: -20px;
+  }
+  header .mobile-menu__button {
+    margin-top: 10px;
+  }
 }
 
 /* === For Extra small Device ( 320px - 575px) == */
@@ -537,16 +549,18 @@ header .mobile-menu__main li .active-menu::after {
 /* === For Small Device ( 0px - 767px) == */
 @media (max-width: 767px) {
   .blog-item {
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
   .blog-item__info {
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    bottom: 30px;
     margin: 0px 35px;
+    height: auto;
   }
   .blog-item__info h5 {
     line-height: 26px;
+  }
+  .blog-item__image img {
+    height: 400px;
   }
   .blog-item__bottom {
     margin-top: 15px;
@@ -794,7 +808,8 @@ p {
 /* === For Small Device ( 0px - 767px) == */
 @media (max-width: 767px) {
   .banner-area {
-    padding-top: 40px;
+    padding-top: 70px;
+    padding-bottom: 30px;
     height: auto;
   }
   .banner-area img {

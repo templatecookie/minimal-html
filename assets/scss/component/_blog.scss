@@ -62,17 +62,20 @@
 /* === For Small Device ( 0px - 767px) == */
 @include small {
     .blog-item {
-        margin-bottom: 30px;
-
+        margin-top: 30px;
         &__info {
-            top: 50%;
-            transform: translateY(-50%);
+            bottom: 30px;
             margin: 0px 35px;
+            height: auto;
 
             h5 {
                 line-height: 26px;
             }
 
+        }
+
+        &__image img {
+            height: 400px;
         }
 
         &__bottom {
