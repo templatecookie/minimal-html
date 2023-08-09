@@ -5,7 +5,7 @@ Templatecookie.com creates quality templates and php scripts. Templatecookie has
 
 > Kevin is a personal portfolio HTML template with 8+ landing pages for different professions.
 
-Check the [Live Demo here](https://kevin-html.vercel.app/).
+Check the [Live Demo here](https://minimal-personal-portfolio.netlify.app/).
 
 ![](screenshot.png)
 
